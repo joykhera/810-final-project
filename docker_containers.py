@@ -8,7 +8,7 @@ class DockerContainers():
 		self.cpachecker_container = None
 
 	def start_containers(self):
-		self.klee_container = self.docker.containers.run(name='klee810', image="klee/klee:latest", platform='linux/amd64', detach=True, command='tail -f /dev/null')
+		self.klee_container = self.docker.containers.run(name='klee810', image="klee/klee:latest", platform='linux/amd64', detach=True, command='tail -f /dev/null', volumes=['/Users/nicholas/Documents/8_2025S/CS810/project/810-final-project/shared:/shared'])
 		self.cpachecker_container = self.docker.containers.run(name='cpachecker810', image="sosylab/cpachecker:latest", platform='linux/amd64', detach=True, command='tail -f /dev/null')
 
 	def stop_containers(self):
@@ -21,16 +21,19 @@ class DockerContainers():
 			self.cpachecker_container.remove()
 
 	def run_code(self, code):
-		(c, stream) = self.klee_container.exec_run(["/bin/bash", "-c", f'echo \"{code}\" > temp.c'])
+		self.klee_container.exec_run(["/bin/bash", "-c", 'cd /shared', 'touch test'])
+
+
+		(c, stream) = self.klee_container.exec_run(["/bin/bash", "-c", 'cd /shared', f'echo \"{code}\" > temp.c'])
 		print(f'Code: {c}')
 		print(f'Stream: {stream}')
-		(c, stream) = self.klee_container.exec_run('clang -I /home/klee/klee_src/include -emit-llvm -c -g -O0 -Xclang -disable-O0-optnone temp.c')
+		(c, stream) = self.klee_container.exec_run(["/bin/bash", "-c", 'cd /shared', 'clang -I /home/klee/klee_src/include -emit-llvm -c -g -O0 -Xclang -disable-O0-optnone temp.c'])
 		print(f'Code: {c}')
 		print(f'Stream: {stream}')
-		(c, stream) = self.klee_container.exec_run('klee --emit-all-errors temp.bc')
+		(c, stream) = self.klee_container.exec_run(["/bin/bash", "-c", 'cd /shared', 'klee --emit-all-errors temp.bc'])
 		print(f'Code: {c}')
 		print(f'Stream: {stream}')
-		(c, stream) = self.klee_container.exec_run('ktest-tool klee-last/test000001.ktest')
+		(c, stream) = self.klee_container.exec_run(["/bin/bash", "-c", 'cd /shared', 'ktest-tool klee-last/test000001.ktest'])
 		print(f'Code: {c}')
 		print(f'Stream: {stream}')
 
