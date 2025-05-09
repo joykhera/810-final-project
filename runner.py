@@ -3,14 +3,5 @@ import time
 
 containers = DockerContainers()
 
-print('Starting containers')
-containers.start_containers()
-
-# time.sleep(1000)
-
 print('Running code file')
-try:
-	containers.run_code("test2", "int main() {return 0;}")
-finally:
-	print('Stopping containers')
-	containers.stop_containers()
+containers.run_code("test1", "int main() {return 0;}")
