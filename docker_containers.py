@@ -20,20 +20,19 @@ class DockerContainers():
 			self.cpachecker_container.stop()
 			self.cpachecker_container.remove()
 
-	def run_code(self, code):
-		self.klee_container.exec_run(["/bin/bash", "-c", 'cd /shared', 'touch test'])
+	def run_code(self, testname, code):
+		# self.klee_container.exec_run(["/bin/bash", "-c", 'cd /shared && touch test'])
 
-
-		(c, stream) = self.klee_container.exec_run(["/bin/bash", "-c", 'cd /shared', f'echo \"{code}\" > temp.c'])
+		(c, stream) = self.klee_container.exec_run(["/bin/bash", "-c", f'mkdir /shared/{testname} && cd /shared/{testname} && echo \"{code}\" > temp.c'])
 		print(f'Code: {c}')
 		print(f'Stream: {stream}')
-		(c, stream) = self.klee_container.exec_run(["/bin/bash", "-c", 'cd /shared', 'clang -I /home/klee/klee_src/include -emit-llvm -c -g -O0 -Xclang -disable-O0-optnone temp.c'])
+		(c, stream) = self.klee_container.exec_run(["/bin/bash", "-c", f'cd /shared/{testname} && clang -I /home/klee/klee_src/include -emit-llvm -c -g -O0 -Xclang -disable-O0-optnone temp.c'])
 		print(f'Code: {c}')
 		print(f'Stream: {stream}')
-		(c, stream) = self.klee_container.exec_run(["/bin/bash", "-c", 'cd /shared', 'klee --emit-all-errors temp.bc'])
+		(c, stream) = self.klee_container.exec_run(["/bin/bash", "-c", f'cd /shared/{testname} && klee --emit-all-errors temp.bc'])
 		print(f'Code: {c}')
 		print(f'Stream: {stream}')
-		(c, stream) = self.klee_container.exec_run(["/bin/bash", "-c", 'cd /shared', 'ktest-tool klee-last/test000001.ktest'])
+		(c, stream) = self.klee_container.exec_run(["/bin/bash", "-c", f'cd /shared/{testname} && ktest-tool klee-last/test000001.ktest'])
 		print(f'Code: {c}')
 		print(f'Stream: {stream}')
 

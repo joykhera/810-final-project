@@ -10,7 +10,7 @@ containers.start_containers()
 
 print('Running code file')
 try:
-	containers.run_code("int main() {return 0;}")
+	containers.run_code("test2", "int main() {return 0;}")
 finally:
 	print('Stopping containers')
 	containers.stop_containers()
