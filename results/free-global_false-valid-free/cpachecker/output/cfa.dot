@@ -1,0 +1,20 @@
+digraph CFA {
+1 [shape="circle" label="N1\n7"]
+4 [shape="circle" label="N4\n6"]
+5 [shape="circle" label="N5\n5"]
+6 [shape="circle" label="N6\n4"]
+7 [shape="circle" label="N7\n3"]
+2 [shape="circle" label="N2\n2"]
+3 [shape="circle" label="N3\n1"]
+0 [shape="circle" label="N0\n0"]
+node [shape="circle"]
+subgraph cluster_main {
+label="main()"
+1 -> 4 [label="INIT GLOBAL VARS"]
+4 -> 5 [label="void free(void *);"]
+5 -> 6 [label="int a = 5;"]
+6 -> 7 [label="int main();"]
+7 -> 2 [label="Function start dummy edge"]
+2 -> 3 [label="free(&a);"]
+3 -> 0 [label="default return"]}
+}

@@ -4,4 +4,4 @@ import time
 containers = DockerContainers()
 
 print('Running code file')
-containers.run_code("test1", "int main() {return 0;}")
+containers.run_code("free-global_false-valid-free", "./tests/free-global_false-valid-free.c")

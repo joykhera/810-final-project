@@ -1,0 +1,4 @@
+KLEE: WARNING: undefined reference to function: __VERIFIER_assume
+KLEE: WARNING: undefined reference to function: __VERIFIER_error
+KLEE: WARNING: undefined reference to function: __VERIFIER_nondet_bool
+KLEE: WARNING ONCE: calling external: __VERIFIER_nondet_bool() at code.c:3 6

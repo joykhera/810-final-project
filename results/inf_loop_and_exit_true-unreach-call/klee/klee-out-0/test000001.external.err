@@ -1,0 +1,7 @@
+Error: failed external call: __VERIFIER_nondet_bool
+File: code.c
+Line: 3
+assembly.ll line: 9
+State: 1
+Stack: 
+	#000000009 in main() at code.c:3
