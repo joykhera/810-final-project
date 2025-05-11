@@ -1,0 +1,11 @@
+Error: memory error: null page access
+File: code.c
+Line: 6
+assembly.ll line: 20
+State: 1
+Stack: 
+	#000000020 in main() at code.c:6
+Info: 
+	address: 0
+	next: object at 139491833417728 of size 4
+		MO10[4] allocated at main():  %retval = alloca i32, align 4

@@ -22,7 +22,7 @@ Restart Algorithm statistics
 Number of algorithms provided:    4
 Number of algorithms used:        3
 Last algorithm used:        /cpachecker/config/components/concurrency.properties
-Total time for algorithm 3:     0.372s
+Total time for algorithm 3:     0.483s
 
 PredicateCPA statistics
 -----------------------
@@ -136,43 +136,43 @@ Size of reached set:             1
   Number of reached functions:   1 (100%)
   Number of target states:       0
 
-Time for analysis setup:          1.463s
-  Time for loading CPAs:          0.688s
-  Time for loading parser:        0.298s
-  Time for CFA construction:      0.453s
-    Time for parsing file(s):     0.234s
-    Time for AST to CFA:          0.089s
-    Time for CFA sanity check:    0.005s
-    Time for post-processing:     0.081s
-    Time for loop structure:      0.001s
+Time for analysis setup:          1.951s
+  Time for loading CPAs:          0.854s
+  Time for loading parser:        0.372s
+  Time for CFA construction:      0.695s
+    Time for parsing file(s):     0.319s
+    Time for AST to CFA:          0.118s
+    Time for CFA sanity check:    0.008s
+    Time for post-processing:     0.110s
+    Time for loop structure:      0.002s
     Time for AST structure:       0.000s
-    Time for CFA export:          0.489s
-      Time for function pointers resolving:            0.008s
+    Time for CFA export:          0.591s
+      Time for function pointers resolving:            0.007s
         Function calls via function pointers:             0 (count: 1, min: 0, max: 0, avg: 0.00)
         Instrumented function pointer calls:              0 (count: 1, min: 0, max: 0, avg: 0.00)
         Function calls with function pointer arguments:        0 (count: 1, min: 0, max: 0, avg: 0.00)
         Instrumented function pointer arguments:          0 (count: 1, min: 0, max: 0, avg: 0.00)
-      Time for classifying variables:                  0.039s
-        Time for collecting variables:                 0.007s
+      Time for classifying variables:                  0.024s
+        Time for collecting variables:                 0.010s
         Time for solving dependencies:                 0.001s
         Time for building hierarchy:                   0.000s
-        Time for building classification:              0.025s
-        Time for exporting data:                       0.006s
-Time for Analysis:                0.392s
-CPU time for analysis:            0.750s
-Time for analyzing result:        0.001s
-Total time for CPAchecker:        1.864s
-Total CPU time for CPAchecker:    3.430s
-Time for statistics:              0.087s
+        Time for building classification:              0.010s
+        Time for exporting data:                       0.003s
+Time for Analysis:                0.516s
+CPU time for analysis:            0.930s
+Time for analyzing result:        0.000s
+Total time for CPAchecker:        2.479s
+Total CPU time for CPAchecker:    4.380s
+Time for statistics:              0.101s
 
-Time for Garbage Collector:       0.061s (in 5 runs)
+Time for Garbage Collector:       0.069s (in 5 runs)
 Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
-Used heap memory:                 42MB (    40 MiB) max;     25MB (    24 MiB) avg;     51MB (    49 MiB) peak
+Used heap memory:                 41MB (    39 MiB) max;     25MB (    24 MiB) avg;     51MB (    49 MiB) peak
 Used non-heap memory:             40MB (    38 MiB) max;     25MB (    24 MiB) avg;     41MB (    39 MiB) peak
 Used in PS Old Gen pool:          13MB (    12 MiB) max;      8MB (     8 MiB) avg;     13MB (    12 MiB) peak
 Allocated heap memory:           125MB (   119 MiB) max;    125MB (   119 MiB) avg
 Allocated non-heap memory:        43MB (    41 MiB) max;     28MB (    27 MiB) avg
-Total process virtual memory:   5146MB (  4908 MiB) max;   4928MB (  4700 MiB) avg
+Total process virtual memory:   5145MB (  4907 MiB) max;   4977MB (  4747 MiB) avg
 
 Verification result: TRUE. No property violation found by chosen configuration.
 More details about the verification run can be found in the directory "./output".

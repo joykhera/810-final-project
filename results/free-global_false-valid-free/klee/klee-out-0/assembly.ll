@@ -24,7 +24,7 @@ attributes #1 = { "frame-pointer"="all" "no-trapping-math"="true" "stack-protect
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(name: "a", scope: !2, file: !3, line: 2, type: !6, isLocal: false, isDefinition: true)
 !2 = distinct !DICompileUnit(language: DW_LANG_C99, file: !3, producer: "clang version 13.0.1 (https://github.com/llvm/llvm-project.git 75e33f71c2dae584b13a7d1186ae0a038ba98838)", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, enums: !4, globals: !5, splitDebugInlining: false, nameTableKind: None)
-!3 = !DIFile(filename: "code.c", directory: "/shared/free-global_false-valid-free/klee")
+!3 = !DIFile(filename: "code.c", directory: "/results/free-global_false-valid-free/klee")
 !4 = !{}
 !5 = !{!0}
 !6 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)

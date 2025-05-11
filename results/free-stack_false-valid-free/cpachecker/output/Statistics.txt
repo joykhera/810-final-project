@@ -1,0 +1,178 @@
+
+Selection Algorithm statistics
+------------------------------
+Size of preliminary analysis reached set:      0
+Used algorithm property:                       /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties
+Program containing only relevant bools:        1
+Relevant boolean vars / relevant vars ratio:   1.0000
+Requires alias handling:                       1
+Requires loop handling:                        0
+Has a single loop:                             0
+Requires composite-type handling:              0
+Requires array handling:                       0
+Requires float handling:                       0
+Requires recursion handling:                   0
+Relevant addressed vars / relevant vars ratio: 1.0000
+Program containing external functions:         true
+Number of all righthand side functions:        1
+
+
+Restart Algorithm statistics
+----------------------------
+Number of algorithms provided:    4
+Number of algorithms used:        3
+Last algorithm used:        /cpachecker/config/components/concurrency.properties
+Total time for algorithm 3:     0.542s
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            0 (NaN% of all post computations)
+Number of strengthen sat checks:   0
+Number of coverage checks:         0
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       0
+Avg ABE block size:                                0.00 (sum: 0, count: 0, min: 0, max: 0)
+Number of predicates discovered:          0
+
+Time for post operator:                                0.000s
+  Time for path formula creation:                      0.000s
+Time for strengthen operator:                          0.000s
+Time for prec operator:                                0.000s
+Time for coverage checks:                              0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+Total number of created targets for pointer analysis: 0
+
+
+
+KeyValue statistics
+-------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    0
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables per state:                     0.00 (sum: 0, count: 1, min: 0, max: 0)
+Number of global variables per state:              0.00 (sum: 0, count: 1, min: 0, max: 0)
+Number of assumptions:                                    0
+Number of deterministic assumptions:                      0
+Level of Determinism:                              100%
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                       0
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.000s
+Total time for path thresholds:                        0.000s
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (AssertionAutomaton) statistics
+-------------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     0.00 (sum: 0, count: 0, min: 0, max: 0) []
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (ErrorLabelAutomaton) statistics
+--------------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     0.00 (sum: 0, count: 0, min: 0, max: 0) []
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (TerminatingFunctions) statistics
+---------------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     0.00 (sum: 0, count: 0, min: 0, max: 0) []
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            0
+
+BMC algorithm statistics
+------------------------
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            0
+
+BMC algorithm statistics
+------------------------
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:                       297
+Number of CFA edges (per node):                         290 (count: 297, min: 0, max: 1, avg: 0.98)
+Number of relevant variables:                      1
+Number of functions:                               7
+Number of loops (and loop nodes):                         0 (sum: 0, min: 0, max: 0, avg: 0.00)
+Size of reached set:             1
+  Number of reached locations:   1 (0%)
+    Avg states per location:     1
+    Max states per location:     1 (at node N31)
+  Number of reached functions:   1 (14%)
+  Number of target states:       0
+
+Time for analysis setup:          2.691s
+  Time for loading CPAs:          1.082s
+  Time for loading parser:        0.386s
+  Time for CFA construction:      1.186s
+    Time for parsing file(s):     0.444s
+    Time for AST to CFA:          0.377s
+    Time for CFA sanity check:    0.024s
+    Time for post-processing:     0.140s
+    Time for loop structure:      0.003s
+    Time for AST structure:       0.000s
+    Time for CFA export:          0.789s
+      Time for function pointers resolving:            0.003s
+        Function calls via function pointers:             0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Instrumented function pointer calls:              0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Function calls with function pointer arguments:        0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Instrumented function pointer arguments:          0 (count: 1, min: 0, max: 0, avg: 0.00)
+      Time for classifying variables:                  0.071s
+        Time for collecting variables:                 0.037s
+        Time for solving dependencies:                 0.002s
+        Time for building hierarchy:                   0.000s
+        Time for building classification:              0.027s
+        Time for exporting data:                       0.005s
+Time for Analysis:                0.568s
+CPU time for analysis:            1.250s
+Time for analyzing result:        0.000s
+Total time for CPAchecker:        3.270s
+Total CPU time for CPAchecker:    6.270s
+Time for statistics:              0.121s
+
+Time for Garbage Collector:       0.077s (in 5 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:                 44MB (    42 MiB) max;     26MB (    25 MiB) avg;     51MB (    48 MiB) peak
+Used non-heap memory:             45MB (    43 MiB) max;     27MB (    26 MiB) avg;     46MB (    44 MiB) peak
+Used in PS Old Gen pool:          12MB (    12 MiB) max;      9MB (     8 MiB) avg;     12MB (    12 MiB) peak
+Allocated heap memory:           125MB (   119 MiB) max;    125MB (   119 MiB) avg
+Allocated non-heap memory:        48MB (    45 MiB) max;     30MB (    29 MiB) avg
+Total process virtual memory:   5150MB (  4912 MiB) max;   5019MB (  4787 MiB) avg
+
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".

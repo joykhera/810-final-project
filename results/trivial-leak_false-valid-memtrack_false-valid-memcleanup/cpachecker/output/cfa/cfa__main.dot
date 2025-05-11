@@ -1,0 +1,7 @@
+digraph main {
+31 [shape="circle" label="N31\n273"]
+36 [shape="circle" label="N36\n272"]
+36 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 36 and 35"]
+36 -> 30[label=""]
+31 -> 36 [label="INIT GLOBAL VARS" fontname="Courier New"]
+}
