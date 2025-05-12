@@ -1,0 +1,45 @@
+digraph CFA {
+12 [shape="circle" label="N12\n10"]
+19 [shape="circle" label="N19\n9"]
+20 [shape="circle" label="N20\n8"]
+21 [shape="circle" label="N21\n7"]
+22 [shape="circle" label="N22\n6"]
+13 [shape="circle" label="N13\n5"]
+14 [shape="circle" label="N14\n4"]
+15 [shape="circle" label="N15\n3"]
+16 [shape="circle" label="N16\n2"]
+1 [shape="circle" label="N1\n6"]
+2 [shape="diamond" label="N2\n5"]
+3 [shape="diamond" label="N3\n4"]
+8 [shape="circle" label="N8\n3"]
+0 [shape="circle" label="N0\n0"]
+17 [shape="circle" label="N17\n1"]
+11 [shape="circle" label="N11\n0"]
+7 [shape="circle" label="N7\n2"]
+4 [shape="circle" label="N4\n1"]
+node [shape="circle"]
+subgraph cluster_get_sign {
+label="get_sign()"
+1 -> 2 [label="Function start dummy edge"]
+2 -> 4 [label="[x == 0]"]
+2 -> 3 [label="[!(x == 0)]"]
+3 -> 7 [label="[x < 0]"]
+3 -> 8 [label="[!(x < 0)]"]
+8 -> 0 [label="return 1;"]
+7 -> 0 [label="return -1;"]
+4 -> 0 [label="return 0;"]}
+subgraph cluster_main {
+label="main()"
+12 -> 19 [label="INIT GLOBAL VARS"]
+19 -> 20 [label="int __VERIFIER_nondet_int();"]
+20 -> 21 [label="int get_sign(int x);"]
+21 -> 22 [label="int main();"]
+22 -> 13 [label="Function start dummy edge"]
+13 -> 14 [label="int a;"]
+14 -> 15 [label="a = __VERIFIER_nondet_int();"]
+15 -> 16 [label="int __CPAchecker_TMP_0;"]
+16 -> 17 [label="__CPAchecker_TMP_0 = get_sign(a);" style="dotted" arrowhead="empty"]
+16 -> 17 [label="__CPAchecker_TMP_0 = get_sign(a);"]
+17 -> 11 [label="return __CPAchecker_TMP_0;"]}
+16 -> 1 [label="get_sign(a)"]
+0 -> 17 [label="Return edge from get_sign to main: __CPAchecker_TMP_0 = get_sign(a);"]}

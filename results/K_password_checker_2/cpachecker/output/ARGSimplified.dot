@@ -1,0 +1,10 @@
+digraph ARG {
+node [style="filled" shape="box" color="white"]
+0 [fillcolor="cornflowerblue" label="0 @ N1\nmain entry\nAbstractionState: ABS0: true\n ValueAnalysisState: []\n" id="0"]
+21 [fillcolor="red" label="21 @ N11\nmain\nAbstractionState: ABS2: true\n ValueAnalysisState: []\n AutomatonState: AssertionAutomaton: _predefinedState_ERROR\n" id="21"]
+18 [fillcolor="red" label="18 @ N16\nmain\nAbstractionState: ABS1: true\n ValueAnalysisState: []\n AutomatonState: AssertionAutomaton: _predefinedState_ERROR\n" id="18"]
+22 [label="22 @ N0\nmain exit\nValueAnalysisState: [main::__retval__=NumericValue[number=0] (int)]\n" id="22"]
+0 -> 22 []
+0 -> 18 []
+0 -> 21 []
+}

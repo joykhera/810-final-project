@@ -1,0 +1,3 @@
+__ADDRESS_OF_main::password@: 4
+__VERIFIER_nondet_int!2@: 543210
+main::password@3: 543210

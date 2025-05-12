@@ -1,0 +1,15 @@
+digraph main {
+12 [shape="circle" label="N12\n10"]
+19 [shape="circle" label="N19\n9"]
+16 [shape="circle" label="N16\n2"]
+17 [shape="circle" label="N17\n1"]
+11 [shape="circle" label="N11\n0"]
+19 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">19</td><td align="left">int __VERIFIER_nondet_int();</td></tr><tr><td align="right">20</td><td align="left">int get_sign(int x);</td></tr><tr><td align="right">21</td><td align="left">int main();</td></tr><tr><td align="right">22</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">13</td><td align="left">int a;</td></tr><tr><td align="right">14</td><td align="left">a = __VERIFIER_nondet_int();</td></tr><tr><td align="right">15</td><td align="left">int __CPAchecker_TMP_0;</td></tr></table>>]
+19 -> 16[label=""]
+12 -> 19 [label="INIT GLOBAL VARS" fontname="Courier New"]
+100001 [shape="component" label="get_sign"]
+16 -> 100001 [label="__CPAchecker_TMP_0 = get_sign(a);" fontname="Courier New"]
+100001 -> 17 [label="" fontname="Courier New"]
+16 -> 17 [label="__CPAchecker_TMP_0 = get_sign(a);" fontname="Courier New"]
+17 -> 11 [label="return __CPAchecker_TMP_0;" fontname="Courier New"]
+}

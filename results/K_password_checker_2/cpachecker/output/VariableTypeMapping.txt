@@ -1,0 +1,2 @@
+main::password	6
+main::__retval__	7

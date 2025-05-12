@@ -1,0 +1,18 @@
+none:	N1 -{INIT GLOBAL VARS}-> N19
+line 3:	N19 -{int __VERIFIER_nondet_int();}-> N20
+line 4:	N20 -{void __assert_fail();}-> N21
+lines 6-25:	N21 -{int main(int argc, char *argv[]);}-> N22
+none:	N22 -{Function start dummy edge}-> N2
+line 8:	N2 -{int password;}-> N3
+line 8:	N3 -{password = __VERIFIER_nondet_int();}-> N4
+	password == 10000;
+line 9:	N4 -{printf("Please enter your password here: ");}-> N5
+line 10:	N5 -{scanf("%d", &password);}-> N6
+line 12:	N6 -{[!(password == 543210)]}-> N9
+	password == 10000;
+	password == 10000;
+line 17:	N9 -{[password == 10000]}-> N13
+	password == 10000;
+	password == 10000;
+line 18:	N13 -{printf("Welcome 2\n");}-> N15
+line 20:	N15 -{__assert_fail();}-> N16

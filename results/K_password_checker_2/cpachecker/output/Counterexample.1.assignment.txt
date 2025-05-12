@@ -1,0 +1,3 @@
+__ADDRESS_OF_main::password@: 4
+__VERIFIER_nondet_int!2@: 10000
+main::password@3: 10000

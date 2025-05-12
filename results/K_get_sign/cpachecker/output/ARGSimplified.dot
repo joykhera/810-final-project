@@ -1,0 +1,16 @@
+digraph ARG {
+node [style="filled" shape="box" color="white"]
+0 [label="0 @ N12\nmain entry\nValueAnalysisState: []\n ConstraintsState: []\n" id="0"]
+5 [label="5 @ N1\nget_sign entry\nValueAnalysisState: []\n ConstraintsState: []\n" id="5"]
+10 [label="10 @ N0\nget_sign exit\nValueAnalysisState: []\n ConstraintsState: []\n" id="10"]
+20 [label="20 @ N11\nmain exit\nValueAnalysisState: []\n ConstraintsState: []\n" id="20"]
+16 [fillcolor="green" label="16 @ N0\nget_sign exit\nValueAnalysisState: []\n ConstraintsState: []\n" id="16"]
+18 [fillcolor="green" label="18 @ N0\nget_sign exit\nValueAnalysisState: []\n ConstraintsState: []\n" id="18"]
+0 -> 5 []
+5 -> 18 []
+5 -> 16 []
+5 -> 10 []
+16 -> 10 [style="dashed" weight="0" label="covered by"]
+18 -> 10 [style="dashed" weight="0" label="covered by"]
+10 -> 20 []
+}

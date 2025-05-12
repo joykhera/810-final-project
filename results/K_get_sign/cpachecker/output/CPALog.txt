@@ -1,0 +1,10 @@
+2025-05-12 21:23:32:705	INFO	CPAMain.detectFrontendLanguageIfNecessary	Language C detected and set for analysis
+
+2025-05-12 21:23:32:802	INFO	CPAchecker.run	CPAchecker 4.0 / symbolicExecution-Cegar (OpenJDK 64-Bit Server VM 17.0.14) started
+
+2025-05-12 21:23:32:825	INFO	CPAchecker.parse	Parsing CFA from file(s) "code.c"
+
+2025-05-12 21:23:34:590	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2025-05-12 21:23:34:627	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+

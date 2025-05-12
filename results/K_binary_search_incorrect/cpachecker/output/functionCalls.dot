@@ -1,0 +1,13 @@
+digraph functioncalls {
+rankdir=LR;
+
+main [shape="box", color=blue];
+binary_search_function [label="binary_search_function", ];
+main -> binary_search_function;
+printf [label="printf", shape="box", color=grey];
+main -> printf;
+dumb_sort [label="dumb_sort", ];
+main -> dumb_sort;
+__assert_fail [label="__assert_fail", shape="box", color=grey];
+main -> __assert_fail;
+}

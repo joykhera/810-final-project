@@ -1,0 +1,97 @@
+line 62:	N86 -{x = __VERIFIER_nondet_int();}-> N87
+lines 64-66:	N88 -{int i = 0;}-> N89
+	i == 0;
+line 64:	N89 -{[i < 9]}-> N91
+	i == 0;
+line 65:	N91 -{[(arr[i]) < (arr[i + 1])]}-> N93
+lines 64-66:	N90 -{i = i + 1;}-> N89
+	i == 1;
+line 64:	N89 -{[i < 9]}-> N91
+	i == 1;
+line 65:	N91 -{[(arr[i]) < (arr[i + 1])]}-> N93
+lines 64-66:	N90 -{i = i + 1;}-> N89
+	i == 2;
+line 64:	N89 -{[i < 9]}-> N91
+	i == 2;
+line 65:	N91 -{[(arr[i]) < (arr[i + 1])]}-> N93
+lines 64-66:	N90 -{i = i + 1;}-> N89
+	i == 3;
+line 64:	N89 -{[i < 9]}-> N91
+	i == 3;
+line 65:	N91 -{[(arr[i]) < (arr[i + 1])]}-> N93
+lines 64-66:	N90 -{i = i + 1;}-> N89
+	i == 4;
+line 64:	N89 -{[i < 9]}-> N91
+	i == 4;
+line 65:	N91 -{[(arr[i]) < (arr[i + 1])]}-> N93
+lines 64-66:	N90 -{i = i + 1;}-> N89
+	i == 5;
+line 64:	N89 -{[i < 9]}-> N91
+	i == 5;
+line 65:	N91 -{[(arr[i]) < (arr[i + 1])]}-> N93
+lines 64-66:	N90 -{i = i + 1;}-> N89
+	i == 6;
+line 64:	N89 -{[i < 9]}-> N91
+	i == 6;
+line 65:	N91 -{[(arr[i]) < (arr[i + 1])]}-> N93
+lines 64-66:	N90 -{i = i + 1;}-> N89
+	i == 7;
+line 64:	N89 -{[i < 9]}-> N91
+	i == 7;
+line 65:	N91 -{[(arr[i]) < (arr[i + 1])]}-> N93
+lines 64-66:	N90 -{i = i + 1;}-> N89
+	i == 8;
+line 64:	N89 -{[i < 9]}-> N91
+	i == 8;
+line 65:	N91 -{[(arr[i]) < (arr[i + 1])]}-> N93
+lines 64-66:	N90 -{i = i + 1;}-> N89
+	i == 9;
+line 64:	N89 -{[!(i < 9)]}-> N92
+	i == 9;
+line 68:	N92 -{int result;}-> N94
+line 68:	N94 -{binary_search_function(arr, 10, x)}-> N31
+	size == 10;
+line 20:	N32 -{int low = 0;}-> N33
+	low == 0;
+	size == 10;
+line 21:	N33 -{int high = size - 1;}-> N34
+	high == 9;
+line 23:	N35 -{while}-> N36
+line 23:	N36 -{[low < high]}-> N37
+	mid == 4;
+	low == 0;
+	high == 9;
+line 25:	N39 -{[(arr[mid]) == target]}-> N41
+line 69:	N95 -{printf("Result of binary search is = %d\n", result);}-> N96
+lines 72-74:	N96 -{int __CPAchecker_TMP_10;}-> N99
+lines 72-74:	N99 -{dumb_sort(arr, 10, x)}-> N51
+	len == 10;
+lines 39-43:	N53 -{int i = 0;}-> N54
+	i == 0;
+	len == 10;
+line 39:	N54 -{[i < len]}-> N56
+	i == 0;
+	len == 10;
+line 40:	N56 -{[!(target == (arr[i]))]}-> N58
+lines 39-43:	N55 -{i = i + 1;}-> N54
+	i == 1;
+line 39:	N54 -{[i < len]}-> N56
+	i == 1;
+	len == 10;
+line 40:	N56 -{[!(target == (arr[i]))]}-> N58
+lines 39-43:	N55 -{i = i + 1;}-> N54
+	i == 2;
+line 39:	N54 -{[i < len]}-> N56
+	i == 2;
+	len == 10;
+line 40:	N56 -{[!(target == (arr[i]))]}-> N58
+lines 39-43:	N55 -{i = i + 1;}-> N54
+	i == 3;
+line 39:	N54 -{[i < len]}-> N56
+	i == 3;
+	len == 10;
+line 40:	N56 -{[target == (arr[i])]}-> N59
+line 72:	N100 -{[result != __CPAchecker_TMP_10]}-> N98
+	result == 4;
+	__CPAchecker_TMP_10 == 3;
+line 73:	N104 -{__assert_fail("0", "code.c", 73, "__PRETTY_FUNCTION__");}-> N489

@@ -1,0 +1,61 @@
+IntBool
+
+[main::__CPAchecker_TMP_3, main::__CPAchecker_TMP_2, main::__CPAchecker_TMP_1, main::__CPAchecker_TMP_0, __bswap_32::__bsx, __bswap_64::__bsx, main::__retval__, __bswap_16::__bsx, sys_nerr]
+
+IntEq
+
+[test::__CPAchecker_TMP_1, bubble_sort::done]
+
+IntAdd
+
+[bubble_sort::nelem, bubble_sort::i]
+
+IntOverflow
+
+[insert_ordered::i, test::i, insert_ordered::nelem, insertion_sort::i, test::nelem, bubble_sort::i, insert_ordered::array[i], insert_ordered::item, bubble_sort::t, bubble_sort::nelem, bubble_sort::array[i + 1], insertion_sort::nelem, bubble_sort::array[i]]
+
+ALL
+
+[stdin, insert_ordered::nelem, stdout, __bswap_32::__bsx, sys_errlist, test::array, insertion_sort::i, __uint32_identity::__x, __uint32_identity::__retval__, __bswap_16::__bsx, bubble_sort::array, sys_nerr, insert_ordered::array, main::__CPAchecker_TMP_3, insert_ordered::item, main::__CPAchecker_TMP_2, main::__CPAchecker_TMP_1, main::__CPAchecker_TMP_0, main::input, bubble_sort::t, bubble_sort::nelem, test::temp2, __bswap_64::__CPAchecker_TMP_0, bubble_sort::array[i + 1], bubble_sort::array[i], bubble_sort::done, test::temp1, insert_ordered::i, insertion_sort::temp, test::i, __bswap_16::__CPAchecker_TMP_0, insertion_sort::array, __bswap_64::__retval__, __uint64_identity::__retval__, main::__retval__, test::__CPAchecker_TMP_1, __bswap_32::__retval__, test::nelem, bubble_sort::i, stderr, insert_ordered::array[i], __uint16_identity::__x, __bswap_32::__CPAchecker_TMP_0, __bswap_64::__bsx, __uint64_identity::__x, insertion_sort::nelem, __bswap_16::__retval__, __uint16_identity::__retval__]
+
+DEPENDENCIES
+
+[[__bswap_16::__CPAchecker_TMP_0, __bswap_16::__retval__] --> [],
+[__bswap_16::__bsx] --> [],
+[__bswap_32::__CPAchecker_TMP_0, __bswap_32::__retval__] --> [],
+[__bswap_32::__bsx] --> [],
+[__bswap_64::__CPAchecker_TMP_0, __bswap_64::__retval__] --> [],
+[__bswap_64::__bsx] --> [],
+[__uint16_identity::__retval__, __uint16_identity::__x] --> [],
+[__uint32_identity::__retval__, __uint32_identity::__x] --> [],
+[__uint64_identity::__retval__, __uint64_identity::__x] --> [],
+[bubble_sort::done] --> [0, 1],
+[bubble_sort::i, bubble_sort::nelem] --> [0, 1, 4],
+[bubble_sort::array[i], bubble_sort::t] --> [],
+[bubble_sort::array[i + 1]] --> [],
+[insert_ordered::i, insert_ordered::nelem, insertion_sort::i, insertion_sort::nelem] --> [0, 1, 4],
+[insert_ordered::array[i], insert_ordered::item] --> [],
+[insert_ordered::array, insertion_sort::temp] --> [],
+[insertion_sort::array, test::temp1] --> [],
+[main::__CPAchecker_TMP_0] --> [],
+[main::__CPAchecker_TMP_1] --> [],
+[main::__CPAchecker_TMP_2] --> [],
+[main::__CPAchecker_TMP_3] --> [],
+[main::input, test::array] --> [4],
+[test::i, test::nelem] --> [0, 1, 4],
+[main::__retval__] --> [0],
+[stdin] --> [1, 40],
+[stdout] --> [1, 40],
+[stderr] --> [1, 40],
+[sys_nerr] --> [],
+[sys_errlist] --> [],
+[bubble_sort::array, test::temp2] --> [],
+[test::__CPAchecker_TMP_1] --> [0, 1]]
+
+RELEVANT VARS
+
+[test::i, insertion_sort::temp, insert_ordered::i, insert_ordered::nelem, test::array, insertion_sort::array, insertion_sort::i, test::nelem, bubble_sort::array, bubble_sort::i, insert_ordered::array, main::__CPAchecker_TMP_3, insert_ordered::item, main::__CPAchecker_TMP_2, main::__CPAchecker_TMP_1, main::__CPAchecker_TMP_0, main::input, bubble_sort::t, test::temp2, bubble_sort::nelem, insertion_sort::nelem, test::temp1]
+
+RELEVANT FIELDS
+
+{}

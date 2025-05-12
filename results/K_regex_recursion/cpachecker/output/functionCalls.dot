@@ -1,0 +1,15 @@
+digraph functioncalls {
+rankdir=LR;
+
+main [shape="box", color=blue];
+match [label="match", ];
+main -> match;
+__VERIFIER_nondet_uchar [label="__VERIFIER_nondet_uchar", shape="box", color=grey];
+main -> __VERIFIER_nondet_uchar;
+matchhere [label="matchhere", ];
+match -> matchhere;
+matchhere -> matchhere;
+matchstar [label="matchstar", ];
+matchhere -> matchstar;
+matchstar -> matchhere;
+}

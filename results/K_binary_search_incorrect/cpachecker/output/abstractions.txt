@@ -1,0 +1,302 @@
+(set-info :source |printed by MathSAT|)
+
+0 (3467,3466,3465,3464,3463,3462,3461,3460,3459,3458,3477,3476,3475,3474,3473,3472,3471,3470,3469,3468,3487,3486,3485,3484,3483,3482,3481,3480,3479,3478,3497,3496,3495,3494,3493,3492,3491,3490,3489,3488,3507,3506,3505,3504,3503,3502,3501,3500,3499,3498,3517,3516,3515,3514,3513,3512,3511,3510,3509,3508,3527,3526,3525,3524,3523,3522,3521,3520,3519,3518,3537,3536,3535,3534,3533,3532,3531,3530,3529,3528,3547,3546,3545,3544,3543,3542,3541,3540,3539,3538,3457,3456,3455,3454,3453,3452,3451,3450,3449) @63:
+(assert true)
+
+3467 () @489:
+(assert true)
+
+3466 () @489:
+(assert true)
+
+3465 () @489:
+(assert true)
+
+3464 () @489:
+(assert true)
+
+3463 () @489:
+(assert true)
+
+3462 () @489:
+(assert true)
+
+3461 () @489:
+(assert true)
+
+3460 () @489:
+(assert true)
+
+3459 () @489:
+(assert true)
+
+3458 () @489:
+(assert true)
+
+3477 () @489:
+(assert true)
+
+3476 () @489:
+(assert true)
+
+3475 () @489:
+(assert true)
+
+3474 () @489:
+(assert true)
+
+3473 () @489:
+(assert true)
+
+3472 () @489:
+(assert true)
+
+3471 () @489:
+(assert true)
+
+3470 () @489:
+(assert true)
+
+3469 () @489:
+(assert true)
+
+3468 () @489:
+(assert true)
+
+3487 () @489:
+(assert true)
+
+3486 () @489:
+(assert true)
+
+3485 () @489:
+(assert true)
+
+3484 () @489:
+(assert true)
+
+3483 () @489:
+(assert true)
+
+3482 () @489:
+(assert true)
+
+3481 () @489:
+(assert true)
+
+3480 () @489:
+(assert true)
+
+3479 () @489:
+(assert true)
+
+3478 () @489:
+(assert true)
+
+3497 () @489:
+(assert true)
+
+3496 () @489:
+(assert true)
+
+3495 () @489:
+(assert true)
+
+3494 () @489:
+(assert true)
+
+3493 () @489:
+(assert true)
+
+3492 () @489:
+(assert true)
+
+3491 () @489:
+(assert true)
+
+3490 () @489:
+(assert true)
+
+3489 () @489:
+(assert true)
+
+3488 () @489:
+(assert true)
+
+3507 () @489:
+(assert true)
+
+3506 () @489:
+(assert true)
+
+3505 () @489:
+(assert true)
+
+3504 () @489:
+(assert true)
+
+3503 () @489:
+(assert true)
+
+3502 () @489:
+(assert true)
+
+3501 () @489:
+(assert true)
+
+3500 () @489:
+(assert true)
+
+3499 () @489:
+(assert true)
+
+3498 () @489:
+(assert true)
+
+3517 () @489:
+(assert true)
+
+3516 () @489:
+(assert true)
+
+3515 () @489:
+(assert true)
+
+3514 () @489:
+(assert true)
+
+3513 () @489:
+(assert true)
+
+3512 () @489:
+(assert true)
+
+3511 () @489:
+(assert true)
+
+3510 () @489:
+(assert true)
+
+3509 () @489:
+(assert true)
+
+3508 () @489:
+(assert true)
+
+3527 () @489:
+(assert true)
+
+3526 () @489:
+(assert true)
+
+3525 () @489:
+(assert true)
+
+3524 () @489:
+(assert true)
+
+3523 () @489:
+(assert true)
+
+3522 () @489:
+(assert true)
+
+3521 () @489:
+(assert true)
+
+3520 () @489:
+(assert true)
+
+3519 () @489:
+(assert true)
+
+3518 () @489:
+(assert true)
+
+3537 () @489:
+(assert true)
+
+3536 () @489:
+(assert true)
+
+3535 () @489:
+(assert true)
+
+3534 () @489:
+(assert true)
+
+3533 () @489:
+(assert true)
+
+3532 () @489:
+(assert true)
+
+3531 () @489:
+(assert true)
+
+3530 () @489:
+(assert true)
+
+3529 () @489:
+(assert true)
+
+3528 () @489:
+(assert true)
+
+3547 () @489:
+(assert true)
+
+3546 () @489:
+(assert true)
+
+3545 () @489:
+(assert true)
+
+3544 () @489:
+(assert true)
+
+3543 () @489:
+(assert true)
+
+3542 () @489:
+(assert true)
+
+3541 () @489:
+(assert true)
+
+3540 () @489:
+(assert true)
+
+3539 () @489:
+(assert true)
+
+3538 () @489:
+(assert true)
+
+3457 () @489:
+(assert true)
+
+3456 () @489:
+(assert true)
+
+3455 () @489:
+(assert true)
+
+3454 () @489:
+(assert true)
+
+3453 () @489:
+(assert true)
+
+3452 () @489:
+(assert true)
+
+3451 () @489:
+(assert true)
+
+3450 () @489:
+(assert true)
+
+3449 () @489:
+(assert true)
+

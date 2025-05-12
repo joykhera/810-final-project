@@ -1,0 +1,18 @@
+digraph dumb_sort {
+54 [shape="doublecircle" label="N54\n6"]
+56 [shape="diamond" label="N56\n4"]
+57 [shape="circle" label="N57\n5"]
+59 [shape="circle" label="N59\n1"]
+58 [shape="circle" label="N58\n3"]
+50 [shape="circle" label="N50\n0"]
+51 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">51</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">52</td><td align="left">for</td></tr><tr><td align="right">53</td><td align="left">int i = 0;</td></tr></table>>]
+51 -> 54[label=""]
+58 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">58</td><td align="left"></td></tr><tr><td align="right">55</td><td align="left">i = i + 1;</td></tr></table>>]
+58 -> 54[label=""]
+54 -> 56 [label="[i < len]" fontname="Courier New"]
+54 -> 57 [label="[!(i < len)]" fontname="Courier New"]
+56 -> 59 [label="[target == (arr[i])]" fontname="Courier New"]
+56 -> 58 [label="[!(target == (arr[i]))]" fontname="Courier New"]
+59 -> 50 [label="return i;" fontname="Courier New"]
+57 -> 50 [label="return -1;" fontname="Courier New"]
+}

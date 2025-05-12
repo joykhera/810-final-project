@@ -1,0 +1,16 @@
+TN:
+SF:/workdir/./code.c
+FN:3,get_sign
+#FN:11
+FN:13,main
+#FN:16
+FNDA:1,main
+FNDA:1,get_sign
+DA:15,4
+DA:4,2
+DA:7,2
+DA:5,1
+DA:8,1
+DA:10,1
+DA:14,2
+end_of_record

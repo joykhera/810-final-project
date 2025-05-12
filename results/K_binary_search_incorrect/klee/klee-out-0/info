@@ -1,0 +1,23 @@
+klee --emit-all-errors code.bc
+PID: 13
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-05-12 21:22:40
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-05-12 21:22:47
+Elapsed: 00:00:07
+KLEE: done: explored paths = 17
+KLEE: done: avg. constructs per query = 338
+KLEE: done: total queries = 136
+KLEE: done: valid queries = 111
+KLEE: done: invalid queries = 25
+KLEE: done: query cex = 136
+
+KLEE: done: total instructions = 2669
+KLEE: done: completed paths = 13
+KLEE: done: partially completed paths = 4
+KLEE: done: generated tests = 17

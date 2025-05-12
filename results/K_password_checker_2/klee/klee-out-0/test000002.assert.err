@@ -1,0 +1,7 @@
+Error: ASSERTION FAIL: 0
+File: code.c
+Line: 16
+assembly.ll line: 49
+State: 2
+Stack: 
+	#000000049 in main(argc=1, argv=140733615837184) at code.c:16

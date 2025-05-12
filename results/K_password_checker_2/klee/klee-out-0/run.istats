@@ -1,0 +1,53 @@
+version: 1
+creator: klee
+pid: 13
+cmd: code.bc
+
+
+positions: instr line
+event: Icov : CoveredInstructions
+event: Forks : Forks
+event: Ireal : InstructionRealTimes
+event: Itime : InstructionTimes
+event: I : Instructions
+event: UCdist : MinDistToUncovered
+event: Rtime : ResolveTime
+event: States : States
+event: Iuncov : UncoveredInstructions
+event: Q : Queries
+event: Qiv : QueriesInvalid
+event: Qv : QueriesValid
+event: Qtime : QueryTime
+events: Icov Forks Ireal Itime I UCdist Rtime States Iuncov Q Qiv Qv Qtime 
+ob=assembly.ll
+fl=code.c
+fn=main
+19 3 1 0 0 0 1 0 0 0 0 0 0 0 0 
+20 3 1 0 0 0 1 0 0 0 0 0 0 0 0 
+21 3 1 0 0 0 1 0 0 0 0 0 0 0 0 
+22 3 1 0 0 0 1 0 0 0 0 0 0 0 0 
+23 3 1 0 0 0 1 0 0 0 0 1 0 0 0 
+24 3 1 0 0 0 1 0 0 0 0 1 0 0 0 
+25 3 1 0 0 0 1 0 0 0 0 0 0 0 0 
+26 3 1 0 0 0 1 0 0 0 0 1 0 0 0 
+27 3 1 0 0 0 1 0 0 0 0 0 0 0 0 
+28 5 1 0 0 0 1 0 0 0 0 0 0 0 0 
+29 6 1 0 0 0 1 0 0 0 0 0 0 0 0 
+30 6 1 0 0 0 1 0 0 0 0 2 0 0 0 
+31 7 1 0 0 0 1 0 0 0 0 0 0 0 0 
+32 8 1 0 0 0 1 0 0 0 0 0 0 0 0 
+33 10 1 0 0 0 1 0 0 0 0 1 0 0 0 
+34 10 1 0 0 0 1 0 0 0 0 0 0 0 0 
+35 10 1 1 0 0 1 0 0 0 0 1 2 0 23934 
+38 11 1 0 0 0 1 0 0 0 0 0 0 0 0 
+39 12 1 0 0 0 1 0 0 0 0 1 0 0 0 
+40 13 0 0 0 0 0 1 0 0 1 0 0 0 0 
+43 14 1 0 0 0 1 0 0 0 0 1 0 0 0 
+44 14 1 0 0 0 1 0 0 0 0 0 0 0 0 
+45 14 1 1 0 0 1 0 0 0 0 1 1 0 12167 
+48 15 1 0 0 0 1 0 0 0 0 0 0 0 0 
+49 16 1 0 0 0 1 0 0 0 0 1 1 0 11625 
+50 17 0 0 0 0 0 1 0 0 1 0 0 0 0 
+53 19 1 0 0 0 1 0 0 0 0 0 0 0 0 
+54 3 1 0 0 0 1 0 0 0 0 0 0 0 0 
+57 20 1 0 0 0 1 0 0 0 0 1 0 0 0 

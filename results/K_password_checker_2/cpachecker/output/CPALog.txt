@@ -1,0 +1,54 @@
+2025-05-12 21:26:34:934	INFO	CPAMain.detectFrontendLanguageIfNecessary	Language C detected and set for analysis
+
+2025-05-12 21:26:35:024	INFO	CPAchecker.run	CPAchecker 4.0 / default (OpenJDK 64-Bit Server VM 17.0.14) started
+
+2025-05-12 21:26:35:047	INFO	CPAchecker.parse	Parsing CFA from file(s) "code.c"
+
+2025-05-12 21:26:35:860	WARNING	CheckBindingVisitor.visit	Undefined function printf found, first called in line 9
+
+2025-05-12 21:26:35:863	WARNING	CheckBindingVisitor.visit	Undefined function scanf found, first called in line 10
+
+2025-05-12 21:26:36:723	INFO	CoreComponentsFactory.createAlgorithm	Using heuristics to select analysis
+
+2025-05-12 21:26:36:739	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ cpa.callstack.unsupportedFunctions 
+
+
+2025-05-12 21:26:36:739	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2025-05-12 21:26:36:746	INFO	SelectionAlgorithm.chooseConfig	Performing heuristic ...
+
+2025-05-12 21:26:36:753	INFO	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:CoreComponentsFactory.createAlgorithm	Using Restarting Algorithm
+
+2025-05-12 21:26:36:763	INFO	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:RestartAlgorithm.run	Loading analysis 1 from file /cpachecker/config/components/configselection-bmc-incremental.properties ...
+
+2025-05-12 21:26:36:921	INFO	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /cpachecker/config/components/configselection-bmc-incremental.properties:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.6.10 (9293adc746be) (May 31 2023 12:38:06, gmp 6.2.0, gcc 7.5.0, 64-bit, reentrant).
+
+2025-05-12 21:26:37:098	INFO	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:RestartAlgorithm.run	Starting analysis 1 ...
+
+2025-05-12 21:26:37:170	INFO	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /cpachecker/config/components/configselection-bmc-incremental.properties:AbstractBMCAlgorithm.run	Creating formula for program
+
+2025-05-12 21:26:37:278	WARNING	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /cpachecker/config/components/configselection-bmc-incremental.properties:PredicateCPA:CtoFormulaConverter.getReturnType	line 9: Return type of function printf is void, but result is used as type int: printf("Please enter your password here: ");
+
+2025-05-12 21:26:37:281	WARNING	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /cpachecker/config/components/configselection-bmc-incremental.properties:PredicateCPA:ExpressionToFormulaVisitor.visit	Cannot get declaration of function printf, ignoring calls to it.
+
+2025-05-12 21:26:37:283	WARNING	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /cpachecker/config/components/configselection-bmc-incremental.properties:PredicateCPA:CtoFormulaConverter.getReturnType	line 10: Return type of function scanf is void, but result is used as type int: scanf("%d", &password);
+
+2025-05-12 21:26:37:284	INFO	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /cpachecker/config/components/configselection-bmc-incremental.properties:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function scanf to be a pure function.
+
+2025-05-12 21:26:37:310	WARNING	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /cpachecker/config/components/configselection-bmc-incremental.properties:PredicateCPA:CtoFormulaConverter.getReturnType	line 23: Return type of function printf is void, but result is used as type int: printf("Error: Incorrect Password \n");
+
+2025-05-12 21:26:37:312	WARNING	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /cpachecker/config/components/configselection-bmc-incremental.properties:PredicateCPA:CtoFormulaConverter.getReturnType	line 18: Return type of function printf is void, but result is used as type int: printf("Welcome 2\n");
+
+2025-05-12 21:26:37:320	WARNING	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /cpachecker/config/components/configselection-bmc-incremental.properties:PredicateCPA:CtoFormulaConverter.getReturnType	line 13: Return type of function printf is void, but result is used as type int: printf("Welcome \n");
+
+2025-05-12 21:26:37:336	INFO	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /cpachecker/config/components/configselection-bmc-incremental.properties:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2025-05-12 21:26:37:376	INFO	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /cpachecker/config/components/configselection-bmc-incremental.properties:AbstractBMCAlgorithm.analyzeCounterexample0	Error found, creating error path
+
+2025-05-12 21:26:37:451	INFO	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:RestartAlgorithm.skipNextAnalysesIfRequired	Ignoring restart configuration '/cpachecker/config/components/recursion.properties' because condition if-recursive did not match.
+
+2025-05-12 21:26:37:452	INFO	Analysis /cpachecker/config/components/configselection-restart-bmc-fallbacks.properties:RestartAlgorithm.skipNextAnalysesIfRequired	Ignoring restart configuration '/cpachecker/config/components/concurrency.properties' because condition if-concurrent did not match.
+
+2025-05-12 21:26:37:454	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+

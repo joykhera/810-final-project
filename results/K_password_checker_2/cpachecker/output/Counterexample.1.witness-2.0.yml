@@ -1,0 +1,61 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "865363e9-d48f-3ae7-96f7-42e8ab03b6ec"
+    creation_time: "2025-05-12T21:26:37Z"
+    producer:
+      name: "CPAchecker"
+      version: "4.0"
+      configuration: "default"
+    task:
+      input_files:
+      - "./code.c"
+      input_file_hashes:
+        "./code.c": "87a306835702fbde5776be91e786a08717edc5b16fb659bfed28d56576197346"
+      specification: ""
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "(password == 10000)"
+          format: "c_expression"
+        location:
+          file_name: "./code.c"
+          line: 16
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "./code.c"
+          line: 19
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "./code.c"
+          line: 24
+          column: 8
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "./code.c"
+          line: 20
+          column: 5
+          function: "main"

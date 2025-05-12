@@ -1,0 +1,27 @@
+- entry_type: "invariant_set"
+  metadata:
+    format_version: "2.0"
+    uuid: "865363e9-d48f-3ae7-96f7-42e8ab03b6ec"
+    creation_time: "2025-05-12T21:27:36Z"
+    producer:
+      name: "CPAchecker"
+      version: "4.0"
+      configuration: "symbolicExecution-Cegar"
+    task:
+      input_files:
+      - "./code.c"
+      input_file_hashes:
+        "./code.c": "741a0f9c156602b27f1ae46b4a43f4de1f673d84e9bff00c24d0a2ec8a6de18b"
+      specification: ""
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - invariant:
+      type: "loop_invariant"
+      location:
+        file_name: "./code.c"
+        line: 47
+        column: 3
+        function: "main"
+      value: "1"
+      format: "c_expression"

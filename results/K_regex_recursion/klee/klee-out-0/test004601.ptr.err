@@ -1,0 +1,20 @@
+Error: memory error: out of bound pointer
+File: code.c
+Line: 14
+assembly.ll line: 78
+State: 6749
+Stack: 
+	#000000078 in matchhere(re=139500423352327, text=140718717669381) at code.c:14
+	#100000210 in matchstar(c=symbolic, re=139500423352327, text=140718717669381) at code.c:7
+	#200000103 in matchhere(re=139500423352325, text=140718717669381) at code.c:17
+	#300000163 in matchhere(re=139500423352324, text=140718717669380) at code.c:21
+	#400000163 in matchhere(re=139500423352323, text=140718717669379) at code.c:21
+	#500000163 in matchhere(re=139500423352322, text=140718717669378) at code.c:21
+	#600000210 in matchstar(c=symbolic, re=139500423352322, text=140718717669378) at code.c:7
+	#700000103 in matchhere(re=139500423352320, text=140718717669378) at code.c:17
+	#800000037 in match(re=139500423352320, text=140718717669376) at code.c:29
+	#900000186 in main() at code.c:50
+Info: 
+	address: 139500423352327
+	next: object at 139488075321344 of size 4
+		MO857372[4] allocated at matchhere():  %retval = alloca i32, align 4

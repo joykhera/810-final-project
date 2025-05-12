@@ -1,0 +1,17 @@
+digraph get_sign {
+2 [shape="diamond" label="N2\n5"]
+4 [shape="circle" label="N4\n1"]
+3 [shape="diamond" label="N3\n4"]
+7 [shape="circle" label="N7\n2"]
+8 [shape="circle" label="N8\n3"]
+0 [shape="circle" label="N0\n0"]
+1 [shape="circle" label="N1\n6"]
+2 -> 4 [label="[x == 0]" fontname="Courier New"]
+2 -> 3 [label="[!(x == 0)]" fontname="Courier New"]
+3 -> 7 [label="[x < 0]" fontname="Courier New"]
+3 -> 8 [label="[!(x < 0)]" fontname="Courier New"]
+7 -> 0 [label="return -1;" fontname="Courier New"]
+1 -> 2 [label="Function start dummy edge" fontname="Courier New"]
+8 -> 0 [label="return 1;" fontname="Courier New"]
+4 -> 0 [label="return 0;" fontname="Courier New"]
+}

@@ -1,0 +1,14 @@
+digraph main {
+106 [shape="circle" label="N106\n449"]
+119 [shape="circle" label="N119\n448"]
+116 [shape="circle" label="N116\n2"]
+117 [shape="circle" label="N117\n1"]
+105 [shape="circle" label="N105\n0"]
+119 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 119 and 115"]
+119 -> 116[label=""]
+106 -> 119 [label="INIT GLOBAL VARS" fontname="Courier New"]
+100004 [shape="component" label="test"]
+116 -> 100004 [label="test(input, 4);" fontname="Courier New"]
+100004 -> 117 [label="" fontname="Courier New"]
+117 -> 105 [label="return 0;" fontname="Courier New"]
+}

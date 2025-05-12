@@ -1,0 +1,59 @@
+IntBool
+
+[__bswap_32::__bsx, __bswap_16::__bsx, sys_nerr, main::__CPAchecker_TMP_4, main::__CPAchecker_TMP_3, main::__CPAchecker_TMP_2, main::__CPAchecker_TMP_1, main::__CPAchecker_TMP_0, __bswap_64::__bsx, main::__CPAchecker_TMP_9, main::__CPAchecker_TMP_8, main::__CPAchecker_TMP_7, main::__CPAchecker_TMP_6, main::__CPAchecker_TMP_5]
+
+IntEq
+
+[main::__retval__]
+
+IntAdd
+
+[main::i]
+
+IntOverflow
+
+[main::__CPAchecker_TMP_10, binary_search_function::__retval__, binary_search_function::high, dumb_sort::len, dumb_sort::i, dumb_sort::__retval__, main::i, binary_search_function::size, binary_search_function::low, main::result, binary_search_function::mid]
+
+ALL
+
+[stdin, binary_search_function::__retval__, stdout, binary_search_function::high, dumb_sort::len, __bswap_32::__bsx, sys_errlist, __uint32_identity::__x, __uint32_identity::__retval__, __bswap_16::__bsx, binary_search_function::target, sys_nerr, main::__CPAchecker_TMP_4, main::__CPAchecker_TMP_3, main::__CPAchecker_TMP_2, main::__CPAchecker_TMP_1, main::__CPAchecker_TMP_0, dumb_sort::__retval__, main::i, main::x, __bswap_64::__CPAchecker_TMP_0, main::__CPAchecker_TMP_9, main::result, main::__CPAchecker_TMP_8, main::__CPAchecker_TMP_7, main::__CPAchecker_TMP_6, binary_search_function::mid, main::__CPAchecker_TMP_5, main::__CPAchecker_TMP_10, __bswap_16::__CPAchecker_TMP_0, binary_search_function::size, __bswap_64::__retval__, __uint64_identity::__retval__, main::__retval__, __bswap_32::__retval__, binary_search_function::low, stderr, main::arr, dumb_sort::arr, __uint16_identity::__x, __bswap_32::__CPAchecker_TMP_0, dumb_sort::i, __bswap_64::__bsx, binary_search_function::arr, __uint64_identity::__x, dumb_sort::target, __bswap_16::__retval__, __uint16_identity::__retval__]
+
+DEPENDENCIES
+
+[[__bswap_16::__CPAchecker_TMP_0, __bswap_16::__retval__] --> [],
+[__bswap_16::__bsx] --> [],
+[__bswap_32::__CPAchecker_TMP_0, __bswap_32::__retval__] --> [],
+[__bswap_32::__bsx] --> [],
+[__bswap_64::__CPAchecker_TMP_0, __bswap_64::__retval__] --> [],
+[__bswap_64::__bsx] --> [],
+[__uint16_identity::__retval__, __uint16_identity::__x] --> [],
+[__uint32_identity::__retval__, __uint32_identity::__x] --> [],
+[__uint64_identity::__retval__, __uint64_identity::__x] --> [],
+[binary_search_function::__retval__, binary_search_function::high, binary_search_function::low, binary_search_function::mid, binary_search_function::size, dumb_sort::__retval__, dumb_sort::i, dumb_sort::len, main::__CPAchecker_TMP_10, main::result] --> [-1, 0, 1, 2, 10],
+[binary_search_function::target, dumb_sort::target, main::x] --> [],
+[main::__CPAchecker_TMP_0] --> [],
+[main::__CPAchecker_TMP_1] --> [],
+[main::__CPAchecker_TMP_2] --> [],
+[main::__CPAchecker_TMP_3] --> [],
+[main::__CPAchecker_TMP_4] --> [],
+[main::__CPAchecker_TMP_5] --> [],
+[main::__CPAchecker_TMP_6] --> [],
+[main::__CPAchecker_TMP_7] --> [],
+[main::__CPAchecker_TMP_8] --> [],
+[main::__CPAchecker_TMP_9] --> [],
+[binary_search_function::arr, dumb_sort::arr, main::arr] --> [10],
+[main::i] --> [0, 1, 9],
+[main::__retval__] --> [1],
+[stdin] --> [1, 40],
+[stdout] --> [1, 40],
+[stderr] --> [1, 40],
+[sys_nerr] --> [],
+[sys_errlist] --> []]
+
+RELEVANT VARS
+
+[binary_search_function::__retval__, dumb_sort::len, binary_search_function::high, binary_search_function::target, main::__CPAchecker_TMP_4, main::__CPAchecker_TMP_3, main::__CPAchecker_TMP_2, main::__CPAchecker_TMP_1, main::__CPAchecker_TMP_0, dumb_sort::__retval__, main::i, main::x, main::result, main::__CPAchecker_TMP_9, main::__CPAchecker_TMP_8, main::__CPAchecker_TMP_7, main::__CPAchecker_TMP_6, binary_search_function::mid, main::__CPAchecker_TMP_5, main::__CPAchecker_TMP_10, binary_search_function::size, binary_search_function::low, main::arr, dumb_sort::arr, dumb_sort::i, binary_search_function::arr, dumb_sort::target]
+
+RELEVANT FIELDS
+
+{}

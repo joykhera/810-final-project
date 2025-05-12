@@ -1,0 +1,5 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun |__ADDRESS_OF_main::password@| () (_ BitVec 32))
+(declare-fun __VERIFIER_nondet_int!2@ () (_ BitVec 32))
+(declare-fun |main::password@3| () (_ BitVec 32))
+(assert (let ((.def_28 (= |main::password@3| (_ bv543210 32))))(let ((.def_23 (= __VERIFIER_nondet_int!2@ |main::password@3|)))(let ((.def_14 (bvurem |__ADDRESS_OF_main::password@| (_ bv4 32))))(let ((.def_15 (= .def_14 (_ bv0 32))))(let ((.def_13 (bvslt (_ bv0 32) |__ADDRESS_OF_main::password@|)))(let ((.def_19 (and .def_13 .def_15)))(let ((.def_17 (bvadd (_ bv4 32) |__ADDRESS_OF_main::password@|)))(let ((.def_18 (bvslt (_ bv0 32) .def_17)))(let ((.def_20 (and .def_18 .def_19)))(let ((.def_24 (and .def_20 .def_23)))(let ((.def_31 (and .def_24 .def_28))).def_31))))))))))))

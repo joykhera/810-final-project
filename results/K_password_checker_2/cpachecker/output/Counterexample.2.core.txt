@@ -1,0 +1,6 @@
+line 8:	N3 -{password = __VERIFIER_nondet_int();}-> N4
+line 9:	N4 -{printf("Please enter your password here: ");}-> N5
+line 10:	N5 -{scanf("%d", &password);}-> N6
+line 12:	N6 -{[password == 543210]}-> N8
+line 13:	N8 -{printf("Welcome \n");}-> N10
+line 15:	N10 -{__assert_fail();}-> N11

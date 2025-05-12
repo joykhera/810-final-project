@@ -1,0 +1,35 @@
+IntBool
+
+[main::__retval__]
+
+IntEq
+
+[]
+
+IntAdd
+
+[main::i]
+
+IntOverflow
+
+[match::text, matchstar::c, matchstar::__CPAchecker_TMP_1, matchstar::__CPAchecker_TMP_0, matchhere::text, match::__CPAchecker_TMP_0, matchhere::__CPAchecker_TMP_1, matchstar::text, matchstar::__retval__, match::__retval__, match::re, main::i, matchhere::re, matchhere::__CPAchecker_TMP_0, matchhere::__retval__, matchstar::re, match::__CPAchecker_TMP_2, match::__CPAchecker_TMP_1, main::re]
+
+ALL
+
+[match::text, matchstar::c, matchstar::__CPAchecker_TMP_1, matchstar::__CPAchecker_TMP_0, matchhere::text, match::__CPAchecker_TMP_0, matchhere::__CPAchecker_TMP_1, main::__retval__, matchstar::text, matchstar::__retval__, match::__retval__, match::re, main::i, matchhere::re, matchhere::__retval__, matchhere::__CPAchecker_TMP_0, match::__CPAchecker_TMP_2, matchstar::re, match::__CPAchecker_TMP_1, main::re]
+
+DEPENDENCIES
+
+[[main::re, match::re, matchhere::re, matchstar::re] --> [1, 2, 7],
+[main::i] --> [0, 1, 7],
+[main::re[i]] --> [],
+[match::__CPAchecker_TMP_0, match::__CPAchecker_TMP_1, match::__CPAchecker_TMP_2, match::__retval__, match::text, matchhere::__CPAchecker_TMP_0, matchhere::__CPAchecker_TMP_1, matchhere::__retval__, matchhere::text, matchstar::__CPAchecker_TMP_0, matchstar::__CPAchecker_TMP_1, matchstar::__retval__, matchstar::c, matchstar::text] --> [0, 1],
+[main::__retval__] --> [0]]
+
+RELEVANT VARS
+
+[matchstar::__CPAchecker_TMP_1, matchstar::c, match::text, matchstar::__CPAchecker_TMP_0, matchhere::text, matchhere::__CPAchecker_TMP_1, match, matchstar::text, matchstar::__retval__, matchstar, match::re, main::i, matchhere, matchhere::re, matchhere::__retval__, matchhere::__CPAchecker_TMP_0, match::__CPAchecker_TMP_2, matchstar::re, match::__CPAchecker_TMP_1, main::re]
+
+RELEVANT FIELDS
+
+{}

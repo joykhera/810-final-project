@@ -1,7 +1,0 @@
-digraph main {
-31 [shape="circle" label="N31\n272"]
-35 [shape="circle" label="N35\n271"]
-35 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 35 and 34"]
-35 -> 30[label=""]
-31 -> 35 [label="INIT GLOBAL VARS" fontname="Courier New"]
-}

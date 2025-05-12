@@ -1,0 +1,30 @@
+digraph functioncalls {
+rankdir=LR;
+
+main [shape="box", color=blue];
+memmove [label="memmove", shape="box", color=grey];
+insert_ordered -> memmove;
+malloc [label="malloc", shape="box", color=grey];
+insertion_sort -> malloc;
+memcpy [label="memcpy", shape="box", color=grey];
+insertion_sort -> memcpy;
+free [label="free", shape="box", color=grey];
+insertion_sort -> free;
+insert_ordered [label="insert_ordered", ];
+insertion_sort -> insert_ordered;
+__VERIFIER_nondet_int [label="__VERIFIER_nondet_int", shape="box", color=grey];
+main -> __VERIFIER_nondet_int;
+test [label="test", ];
+main -> test;
+test -> malloc;
+printf [label="printf", shape="box", color=grey];
+test -> printf;
+test -> memcpy;
+insertion_sort [label="insertion_sort", ];
+test -> insertion_sort;
+bubble_sort [label="bubble_sort", ];
+test -> bubble_sort;
+test -> free;
+__assert_fail [label="__assert_fail", shape="box", color=grey];
+test -> __assert_fail;
+}

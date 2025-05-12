@@ -1,5 +1,0 @@
-(set-info :source |printed by MathSAT|)
-
-main N8:
-(assert true)
-

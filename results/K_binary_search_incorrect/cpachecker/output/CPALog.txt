@@ -1,0 +1,310 @@
+2025-05-12 21:22:58:956	INFO	CPAMain.detectFrontendLanguageIfNecessary	Language C detected and set for analysis
+
+2025-05-12 21:22:59:040	INFO	CPAchecker.run	CPAchecker 4.0 / default (OpenJDK 64-Bit Server VM 17.0.14) started
+
+2025-05-12 21:22:59:064	INFO	CPAchecker.parse	Parsing CFA from file(s) "code.c"
+
+2025-05-12 21:23:00:441	WARNING	CheckBindingVisitor.visit	Undefined function __VERIFIER_nondet_int found, first called in line 50
+
+2025-05-12 21:23:01:711	INFO	CoreComponentsFactory.createAlgorithm	Using heuristics to select analysis
+
+2025-05-12 21:23:01:728	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ cpa.callstack.unsupportedFunctions 
+
+
+2025-05-12 21:23:01:729	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2025-05-12 21:23:01:740	INFO	SelectionAlgorithm.chooseConfig	Performing heuristic ...
+
+2025-05-12 21:23:01:748	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:CoreComponentsFactory.createAlgorithm	Using Restarting Algorithm
+
+2025-05-12 21:23:01:761	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:RestartAlgorithm.run	Loading analysis 1 from file /cpachecker/config/components/parallel-valueAnalysis.properties ...
+
+2025-05-12 21:23:01:780	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:ResourceLimitChecker.fromConfiguration	Using the following resource limits: Thread CPU-time limit of 90s
+
+2025-05-12 21:23:02:258	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.6.10 (9293adc746be) (May 31 2023 12:38:06, gmp 6.2.0, gcc 7.5.0, 64-bit, reentrant).
+
+2025-05-12 21:23:02:493	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:InductionStepCase:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.6.10 (9293adc746be) (May 31 2023 12:38:06, gmp 6.2.0, gcc 7.5.0, 64-bit, reentrant).
+
+2025-05-12 21:23:02:530	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:RestartAlgorithm.run	Starting analysis 1 ...
+
+2025-05-12 21:23:02:912	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.run	Creating formula for program
+
+2025-05-12 21:23:03:317	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample	Error path found, starting counterexample check with CPACHECKER.
+
+2025-05-12 21:23:03:725	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_0 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:03:825	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_1 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:03:838	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_2 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:03:854	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_3 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:03:869	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_4 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:03:880	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_5 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:03:883	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_6 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:03:885	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_7 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:03:894	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_8 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:03:922	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_9 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:04:056	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:PredicateCPA:CtoFormulaConverter.getReturnType	line 62: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: x = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:04:233	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2025-05-12 21:23:04:297	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2025-05-12 21:23:04:664	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheckAlgorithm.checkCounterexample	Error path found, starting counterexample check with CPACHECKER.
+
+2025-05-12 21:23:05:581	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2025-05-12 21:23:05:812	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheck:AutomatonGraphmlParser.getSpecAsProperties	Cannot map specification // This file is part of CPAchecker,
+// a tool for configurable software verification:
+// https://cpachecker.sosy-lab.org
+//
+// SPDX-FileCopyrightText: 2007-2020 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+OBSERVER AUTOMATON AssertionAutomaton
+// This automaton detects assertions that may fail
+// (i.e., a function call to __assert_fail).
+
+INITIAL STATE Init;
+
+STATE USEFIRST Init :
+   // Match standard calls to __assert_fail with nice message on violations.
+   MATCH {__assert_fail($1, $2, $3, $4)}
+    -> ERROR("assertion in $location: Condition $1 failed in $2, line $3");
+
+   // Match if assert_fail or assert_func is called with any number of parameters.
+   MATCH {__assert_fail($?)} || MATCH {__assert_func($?)}
+   -> ERROR("assertion in $location");
+
+   // Print warnings for other common error functions to warn users about potentially wrong specification.
+
+   MATCH {assert($?)} && !CHECK(location, "functionName==assert")
+   -> PRINT "WARNING: Function assert() without body detected. Please run the C preprocessor on this file to enable assertion checking."
+      GOTO Init;
+
+   MATCH {__VERIFIER_error($?)} && !CHECK(location, "functionName==__VERIFIER_error")
+   -> PRINT "WARNING: Function __VERIFIER_error() is ignored by this specification. If you want to check for reachability of __VERIFIER_error, pass '--spec sv-comp-reachability' as parameter."
+      GOTO Init;
+
+  MATCH {reach_error($?)}
+   -> PRINT "WARNING: Function reach_error() is ignored by this specification. If you want to check for reachability of reach_error, pass '--spec sv-comp-reachability' as parameter."
+      GOTO Init;
+
+END AUTOMATON to property type. Will ignore it (would only be problematic if this were the termination property).
+
+2025-05-12 21:23:05:983	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:AutomatonGraphmlParser.getSpecAsProperties	Cannot map specification // This file is part of CPAchecker,
+// a tool for configurable software verification:
+// https://cpachecker.sosy-lab.org
+//
+// SPDX-FileCopyrightText: 2007-2020 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+OBSERVER AUTOMATON AssertionAutomaton
+// This automaton detects assertions that may fail
+// (i.e., a function call to __assert_fail).
+
+INITIAL STATE Init;
+
+STATE USEFIRST Init :
+   // Match standard calls to __assert_fail with nice message on violations.
+   MATCH {__assert_fail($1, $2, $3, $4)}
+    -> ERROR("assertion in $location: Condition $1 failed in $2, line $3");
+
+   // Match if assert_fail or assert_func is called with any number of parameters.
+   MATCH {__assert_fail($?)} || MATCH {__assert_func($?)}
+   -> ERROR("assertion in $location");
+
+   // Print warnings for other common error functions to warn users about potentially wrong specification.
+
+   MATCH {assert($?)} && !CHECK(location, "functionName==assert")
+   -> PRINT "WARNING: Function assert() without body detected. Please run the C preprocessor on this file to enable assertion checking."
+      GOTO Init;
+
+   MATCH {__VERIFIER_error($?)} && !CHECK(location, "functionName==__VERIFIER_error")
+   -> PRINT "WARNING: Function __VERIFIER_error() is ignored by this specification. If you want to check for reachability of __VERIFIER_error, pass '--spec sv-comp-reachability' as parameter."
+      GOTO Init;
+
+  MATCH {reach_error($?)}
+   -> PRINT "WARNING: Function reach_error() is ignored by this specification. If you want to check for reachability of reach_error, pass '--spec sv-comp-reachability' as parameter."
+      GOTO Init;
+
+END AUTOMATON to property type. Will ignore it (would only be problematic if this were the termination property).
+
+2025-05-12 21:23:06:344	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheck:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.6.10 (9293adc746be) (May 31 2023 12:38:06, gmp 6.2.0, gcc 7.5.0, 64-bit, reentrant).
+
+2025-05-12 21:23:06:345	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.6.10 (9293adc746be) (May 31 2023 12:38:06, gmp 6.2.0, gcc 7.5.0, 64-bit, reentrant).
+
+2025-05-12 21:23:06:353	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:PredicateCPA:Repository.addMBean	Warning: Error during registration of management interface AbstractionPredicatesMBean (org.sosy_lab.cpachecker:type=predicate,name=AbstractionPredicates)
+
+2025-05-12 21:23:06:548	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_0 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:555	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_1 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:562	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_0 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:568	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_2 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:573	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_1 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:578	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_3 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:581	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_2 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:585	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_4 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:587	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_3 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:588	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_5 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:591	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_4 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:600	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_6 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:604	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_7 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:604	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_5 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:608	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_8 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:616	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_9 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:616	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_6 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:626	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_7 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:630	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_8 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:647	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	lines 49-60: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: __CPAchecker_TMP_9 = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:665	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	line 62: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: x = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:665	WARNING	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheck:PredicateCPA:CtoFormulaConverter.getReturnType	line 62: Return type of function __VERIFIER_nondet_int is void, but result is used as type int: x = __VERIFIER_nondet_int();
+
+2025-05-12 21:23:06:944	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Starting induction check...
+
+2025-05-12 21:23:07:053	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample	Error path found but identified as infeasible.
+
+2025-05-12 21:23:07:054	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 2:CounterexampleCheckAlgorithm.checkCounterexample	Error path found but identified as infeasible.
+
+2025-05-12 21:23:07:094	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:LoopBoundCPA:LoopBoundPrecisionAdjustment.nextState	Adjusting maxLoopIterations to 2
+
+2025-05-12 21:23:07:095	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.run	Creating formula for program
+
+2025-05-12 21:23:07:108	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2025-05-12 21:23:07:111	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2025-05-12 21:23:07:189	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2025-05-12 21:23:07:612	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Starting induction check...
+
+2025-05-12 21:23:07:764	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:LoopBoundCPA:LoopBoundPrecisionAdjustment.nextState	Adjusting maxLoopIterations to 3
+
+2025-05-12 21:23:07:764	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.run	Creating formula for program
+
+2025-05-12 21:23:07:769	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2025-05-12 21:23:07:770	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2025-05-12 21:23:07:842	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2025-05-12 21:23:08:281	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Starting induction check...
+
+2025-05-12 21:23:08:445	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:LoopBoundCPA:LoopBoundPrecisionAdjustment.nextState	Adjusting maxLoopIterations to 4
+
+2025-05-12 21:23:08:446	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.run	Creating formula for program
+
+2025-05-12 21:23:08:451	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2025-05-12 21:23:08:452	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2025-05-12 21:23:08:510	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2025-05-12 21:23:08:888	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Starting induction check...
+
+2025-05-12 21:23:09:152	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:LoopBoundCPA:LoopBoundPrecisionAdjustment.nextState	Adjusting maxLoopIterations to 5
+
+2025-05-12 21:23:09:152	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.run	Creating formula for program
+
+2025-05-12 21:23:09:169	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2025-05-12 21:23:09:170	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2025-05-12 21:23:09:207	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2025-05-12 21:23:09:842	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Starting induction check...
+
+2025-05-12 21:23:10:161	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:LoopBoundCPA:LoopBoundPrecisionAdjustment.nextState	Adjusting maxLoopIterations to 6
+
+2025-05-12 21:23:10:162	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.run	Creating formula for program
+
+2025-05-12 21:23:10:165	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2025-05-12 21:23:10:166	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2025-05-12 21:23:10:209	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2025-05-12 21:23:10:816	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Starting induction check...
+
+2025-05-12 21:23:11:158	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:LoopBoundCPA:LoopBoundPrecisionAdjustment.nextState	Adjusting maxLoopIterations to 7
+
+2025-05-12 21:23:11:159	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.run	Creating formula for program
+
+2025-05-12 21:23:11:164	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2025-05-12 21:23:11:165	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2025-05-12 21:23:11:286	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2025-05-12 21:23:12:014	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Starting induction check...
+
+2025-05-12 21:23:12:670	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:LoopBoundCPA:LoopBoundPrecisionAdjustment.nextState	Adjusting maxLoopIterations to 8
+
+2025-05-12 21:23:12:671	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.run	Creating formula for program
+
+2025-05-12 21:23:12:674	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2025-05-12 21:23:12:675	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2025-05-12 21:23:12:728	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2025-05-12 21:23:13:405	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Starting induction check...
+
+2025-05-12 21:23:13:882	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:LoopBoundCPA:LoopBoundPrecisionAdjustment.nextState	Adjusting maxLoopIterations to 9
+
+2025-05-12 21:23:13:883	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.run	Creating formula for program
+
+2025-05-12 21:23:13:885	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2025-05-12 21:23:13:886	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2025-05-12 21:23:13:923	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2025-05-12 21:23:14:847	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:KInductionProver.check	Starting induction check...
+
+2025-05-12 21:23:15:746	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:LoopBoundCPA:LoopBoundPrecisionAdjustment.nextState	Adjusting maxLoopIterations to 10
+
+2025-05-12 21:23:15:746	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.run	Creating formula for program
+
+2025-05-12 21:23:15:855	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2025-05-12 21:23:16:317	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:Parallel analysis 3:AbstractBMCAlgorithm.analyzeCounterexample0	Error found, creating error path
+
+2025-05-12 21:23:16:512	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:Analysis /cpachecker/config/components/parallel-valueAnalysis.properties:ParallelAlgorithm.handleFutureResults	/cpachecker/config/components/parallel-kInduction.properties finished successfully.
+
+2025-05-12 21:23:16:515	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:RestartAlgorithm.skipNextAnalysesIfRequired	Ignoring restart configuration '/cpachecker/config/components/recursion.properties' because condition if-recursive did not match.
+
+2025-05-12 21:23:16:516	INFO	Analysis /cpachecker/config/components/configselection-restart-valueAnalysis-fallbacks.properties:RestartAlgorithm.skipNextAnalysesIfRequired	Ignoring restart configuration '/cpachecker/config/components/concurrency.properties' because condition if-concurrent did not match.
+
+2025-05-12 21:23:16:517	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+

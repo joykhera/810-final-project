@@ -1,0 +1,32 @@
+IntBool
+
+[main::__retval__]
+
+IntEq
+
+[main::password]
+
+IntAdd
+
+[]
+
+IntOverflow
+
+[]
+
+ALL
+
+[main::password, main::__retval__]
+
+DEPENDENCIES
+
+[[main::password] --> [10000, 543210],
+[main::__retval__] --> [0]]
+
+RELEVANT VARS
+
+[main::password]
+
+RELEVANT FIELDS
+
+{}

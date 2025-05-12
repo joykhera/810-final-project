@@ -1,0 +1,4 @@
+KLEE: WARNING: undefined reference to function: printf
+KLEE: WARNING: undefined reference to function: scanf
+KLEE: WARNING ONCE: calling external: printf(140721804677120) at code.c:8 3
+KLEE: WARNING ONCE: calling external: scanf(140717509709824, 139493980901376) at code.c:10 7

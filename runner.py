@@ -4,25 +4,25 @@ import time
 containers = DockerContainers()
 
 working_tests = [
-	'free-global_false-valid-free',
-	'free-stack_false-valid-free',
-	'inf_loop_and_exit_true-unreach-call',
-	'invalid_free_regression_false-valid-free',
-	'null-deref_false-valid-deref',
-	'trivial-leak_false-valid-memtrack_false-valid-memcleanup',
+	'K_binary_search_correct',
+	'K_binary_search_incorrect',
+	'K_get_sign',
+	'K_password_checker',
+	'K_password_checker_2',
+	'K_regex_recursion',
+	'K_sort'
 ]
 
-not_working_tests = {
+def run_test(testname):
+	options = ''
+	with open(f'./tests/{testname}/cpachecker.options', 'r') as opt: 
+		options = opt.read()
 
-}
+	containers.run_code(testname, f'./tests/{testname}/klee.c', f'./tests/{testname}/cpachecker.c', options)
 
-print('Running code file')
-testname=working_tests[1]
-containers.run_code(testname, f'./tests/{testname}.c')
+def run_all_tests():
+	for t in working_tests:
+		run_test(t)
 
-# test_dir = './tests/'
-
-# def run_one_test(test_name):
-# 	containers.run_code(test_name, f'{test_dir}/{test_name}.c')
-
-# run_one_test('free-global_false-valid-free')
+run_all_tests()
+# run_test('binary_search_correct')
