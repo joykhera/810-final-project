@@ -1,0 +1,18 @@
+Test Case 							KLEE 	CPAchecker
+binary_search_correct 	0 		0
+binary_search_incorrect 4 		19
+get_sign 								0 		0
+password_checker 				1	 		1
+password_checker_2 			2 		2
+regex_recursion 				763 	0
+sort 										0 		0
+while_const 						0 		0
+while_var 							800+ 	1
+
+NOTES:
+All cases with 0 did not have any assertions. For test case binary_search_incorrect, both KLEE
+and CPAchecker found the same problem, but KLEE was able to show every possibility in only 4
+examples, where CPAchecker needed 19. In the regex_recursion test, CPAchecker was not able to find 
+any examples that lead to an assertion. For the while_var test case, CPAchecker was able to create 
+one execution path leading to the assertion. Although KLEE never finished, it calculated over 800
+execution paths in the 10 minutes it was running.

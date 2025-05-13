@@ -1,0 +1,15 @@
+Test Case 							KLEE 		CPAchecker
+binary-search_correct 	100.0% 	100.0%
+binary_search_incorrect 94.4% 	94.4%
+get_sign 								100.0% 	100.0%
+password_checker 				100.0% 	100.0%
+password_checker_2 			100.0% 	100.0%
+regex_recursion 				100.0% 	74.4%
+sort 										100.0% 	100.0%
+while_const 						100.0% 	100.0%
+while_var 							N/A 		100.0%
+
+NOTES:
+Coverage the same for all test cases with two exceptions. CPAchecker fails at the regex tests because it does 
+not natively support recursion, meaning it couldn't reach every state. KLEE fails to finish running the while_var
+test because of path explosion, so final coverage is not known.
