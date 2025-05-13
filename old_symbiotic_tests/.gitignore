@@ -1,5 +1,0 @@
-*.bc
-*.sliced
-*.graphml
-tags
-klee-*
