@@ -2,11 +2,13 @@
 import os
 import subprocess
 from parser.symbolic_tree import SymbolicExecutionNode
+from metrics import timed_parse
 
 # Set your actual path here
 KTEST_TOOL_PATH = "klee/tools/ktest-tool/ktest-tool"
 
 
+@timed_parse
 def parse_klee_ktests(klee_dir):
     nodes = []
     ktest_files = sorted(f for f in os.listdir(klee_dir) if f.endswith(".ktest"))
