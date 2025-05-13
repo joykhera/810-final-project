@@ -10,7 +10,7 @@ while_const 						- 		-
 while_var 							800+ 	1
 
 NOTES:
-The test cases binary_search_correct, get_sign, sort, and while_const do not throw any exceptions,
+The test cases binary_search_correct, get_sign, sort, and while_const do not throw any assertions,
 meaning there are none to be found.
 
 For test case binary_search_incorrect, both KLEE and CPAchecker found the same problem, but KLEE 
