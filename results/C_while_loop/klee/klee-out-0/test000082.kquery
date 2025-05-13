@@ -1,0 +1,127 @@
+array n[4] : w32 -> w8 = symbolic
+array x[4] : w32 -> w8 = symbolic
+(query [(Ult N0:(Sub w32 (ReadLSB w32 0 n)
+                          N1:(ReadLSB w32 0 x))
+              N1)
+         (Eq false
+             (Ult N2:(Add w32 4294967295 N1) N3:(Add w32 1 N0)))
+         (Ult N3 N2)
+         (Eq false
+             (Ult N4:(Add w32 4294967294 N1) N5:(Add w32 2 N0)))
+         (Ult N5 N4)
+         (Eq false
+             (Ult N6:(Add w32 4294967293 N1) N7:(Add w32 3 N0)))
+         (Ult N7 N6)
+         (Eq false
+             (Ult N8:(Add w32 4294967292 N1) N9:(Add w32 4 N0)))
+         (Ult N9 N8)
+         (Eq false
+             (Ult N10:(Add w32 4294967291 N1) N11:(Add w32 5 N0)))
+         (Ult N11 N10)
+         (Eq false
+             (Ult N12:(Add w32 4294967290 N1) N13:(Add w32 6 N0)))
+         (Ult N13 N12)
+         (Eq false
+             (Ult N14:(Add w32 4294967289 N1) N15:(Add w32 7 N0)))
+         (Ult N15 N14)
+         (Eq false
+             (Ult N16:(Add w32 4294967288 N1) N17:(Add w32 8 N0)))
+         (Ult N17 N16)
+         (Eq false
+             (Ult N18:(Add w32 4294967287 N1) N19:(Add w32 9 N0)))
+         (Ult N19 N18)
+         (Eq false
+             (Ult N20:(Add w32 4294967286 N1) N21:(Add w32 10 N0)))
+         (Ult N21 N20)
+         (Eq false
+             (Ult N22:(Add w32 4294967285 N1) N23:(Add w32 11 N0)))
+         (Ult N23 N22)
+         (Eq false
+             (Ult N24:(Add w32 4294967284 N1) N25:(Add w32 12 N0)))
+         (Ult N25 N24)
+         (Eq false
+             (Ult N26:(Add w32 4294967283 N1) N27:(Add w32 13 N0)))
+         (Ult N27 N26)
+         (Eq false
+             (Ult N28:(Add w32 4294967282 N1) N29:(Add w32 14 N0)))
+         (Ult N29 N28)
+         (Eq false
+             (Ult N30:(Add w32 4294967281 N1) N31:(Add w32 15 N0)))
+         (Ult N31 N30)
+         (Eq false
+             (Ult N32:(Add w32 4294967280 N1) N33:(Add w32 16 N0)))
+         (Ult N33 N32)
+         (Eq false
+             (Ult N34:(Add w32 4294967279 N1) N35:(Add w32 17 N0)))
+         (Ult N35 N34)
+         (Eq false
+             (Ult N36:(Add w32 4294967278 N1) N37:(Add w32 18 N0)))
+         (Ult N37 N36)
+         (Eq false
+             (Ult N38:(Add w32 4294967277 N1) N39:(Add w32 19 N0)))
+         (Ult N39 N38)
+         (Eq false
+             (Ult N40:(Add w32 4294967276 N1) N41:(Add w32 20 N0)))
+         (Ult N41 N40)
+         (Eq false
+             (Ult N42:(Add w32 4294967275 N1) N43:(Add w32 21 N0)))
+         (Ult N43 N42)
+         (Eq false
+             (Ult N44:(Add w32 4294967274 N1) N45:(Add w32 22 N0)))
+         (Ult N45 N44)
+         (Eq false
+             (Ult N46:(Add w32 4294967273 N1) N47:(Add w32 23 N0)))
+         (Ult N47 N46)
+         (Eq false
+             (Ult N48:(Add w32 4294967272 N1) N49:(Add w32 24 N0)))
+         (Ult N49 N48)
+         (Eq false
+             (Ult N50:(Add w32 4294967271 N1) N51:(Add w32 25 N0)))
+         (Ult N51 N50)
+         (Eq false
+             (Ult N52:(Add w32 4294967270 N1) N53:(Add w32 26 N0)))
+         (Ult N53 N52)
+         (Eq false
+             (Ult N54:(Add w32 4294967269 N1) N55:(Add w32 27 N0)))
+         (Ult N55 N54)
+         (Eq false
+             (Ult N56:(Add w32 4294967268 N1) N57:(Add w32 28 N0)))
+         (Ult N57 N56)
+         (Eq false
+             (Ult N58:(Add w32 4294967267 N1) N59:(Add w32 29 N0)))
+         (Ult N59 N58)
+         (Eq false
+             (Ult N60:(Add w32 4294967266 N1) N61:(Add w32 30 N0)))
+         (Ult N61 N60)
+         (Eq false
+             (Ult N62:(Add w32 4294967265 N1) N63:(Add w32 31 N0)))
+         (Ult N63 N62)
+         (Eq false
+             (Ult N64:(Add w32 4294967264 N1) N65:(Add w32 32 N0)))
+         (Ult N65 N64)
+         (Eq false
+             (Ult N66:(Add w32 4294967263 N1) N67:(Add w32 33 N0)))
+         (Ult N67 N66)
+         (Eq false
+             (Ult N68:(Add w32 4294967262 N1) N69:(Add w32 34 N0)))
+         (Ult N69 N68)
+         (Eq false
+             (Ult N70:(Add w32 4294967261 N1) N71:(Add w32 35 N0)))
+         (Ult N71 N70)
+         (Eq false
+             (Ult N72:(Add w32 4294967260 N1) N73:(Add w32 36 N0)))
+         (Ult N73 N72)
+         (Eq false
+             (Ult N74:(Add w32 4294967259 N1) N75:(Add w32 37 N0)))
+         (Ult N75 N74)
+         (Eq false
+             (Ult N76:(Add w32 4294967258 N1) N77:(Add w32 38 N0)))
+         (Ult N77 N76)
+         (Eq false
+             (Ult N78:(Add w32 4294967257 N1) N79:(Add w32 39 N0)))
+         (Ult N79 N78)
+         (Eq false
+             (Ult N80:(Add w32 4294967256 N1) N81:(Add w32 40 N0)))
+         (Ult N81 N80)
+         (Ult (Add w32 4294967255 N1) (Add w32 41 N0))]
+        false)

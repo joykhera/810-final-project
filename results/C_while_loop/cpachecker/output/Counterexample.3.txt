@@ -1,0 +1,37 @@
+none:	N1 -{INIT GLOBAL VARS}-> N21
+line 9:	N21 -{unsigned int __VERIFIER_nondet_uint();}-> N22
+lines 10-11:	N22 -{void __assert_fail(const char *assertion, const char *file, unsigned int line, const char *function);}-> N23
+lines 12-24:	N23 -{int main();}-> N24
+none:	N24 -{Function start dummy edge}-> N2
+line 13:	N2 -{unsigned n;}-> N3
+line 13:	N3 -{n = __VERIFIER_nondet_uint();}-> N4
+	n == 4294967295U;
+line 14:	N4 -{unsigned x;}-> N5
+line 14:	N5 -{x = __VERIFIER_nondet_uint();}-> N6
+	x == 2147483648U;
+line 15:	N6 -{unsigned y = n - x;}-> N7
+	n == 4294967295U;
+	x == 2147483648U;
+	y == 2147483647U;
+line 16:	N7 -{while}-> N8
+line 16:	N8 -{[x > y]}-> N9
+	x == 2147483648U;
+	y == 2147483647U;
+	x == 2147483648U;
+y == 2147483647U;
+line 17:	N9 -{const unsigned __CPAchecker_TMP_0 = x;}-> N11
+line 17:	N11 -{x = x - 1;}-> N12
+	x == 2147483647U;
+line 17:	N12 -{__CPAchecker_TMP_0;}-> N13
+line 18:	N13 -{const unsigned __CPAchecker_TMP_1 = y;}-> N14
+line 18:	N14 -{y = y + 1;}-> N15
+	y == 2147483648U;
+line 18:	N15 -{__CPAchecker_TMP_1;}-> N16
+	x == 2147483647U;
+	y == 2147483648U;
+line 19:	N16 -{[x < y]}-> N18
+	x == 2147483647U;
+	y == 2147483648U;
+	x == 2147483647U;
+y == 2147483648U;
+line 20:	N18 -{__assert_fail("0", "example-unsafe.c", 20, "main");}-> N19

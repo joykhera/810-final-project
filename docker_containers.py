@@ -7,13 +7,13 @@ class DockerContainers():
 		try:
 			self.docker = docker.from_env()
 		except:
-			print(f'Error retrieving Docker instance. Make sure Docker is running.')
+			print(f'Error retrieving Docker instance. Make sure Docker is running: {e}')
 
 		try:
 			self.docker.images.get('klee/klee:latest')
 			self.docker.images.get('sosylab/cpachecker:latest')
-		except:
-			print(f'Error retrieving docker images')
+		except Exception as e:
+			print(f'Error retrieving docker images: {e}')
 
 	def run_code(self, testname, klee_file, cpachecker_file, cpachecker_options):
 		try:
@@ -46,8 +46,8 @@ class DockerContainers():
 				c = cpachecker.read()
 				with open(f'{test_dir}/cpachecker/code.c', 'w') as file:
 					file.write(c)
-		except:
-			print(f'Error creating directories')
+		except Exception as e:
+			print(f'Error creating directories: {e}')
 			return
 		
 		klee_time = 0.0
@@ -73,8 +73,8 @@ class DockerContainers():
 			self.klee_container.stop()
 			self.klee_container.remove()
 			klee_time = time.time() - klee_start
-		except:
-			print(f'Error running {testname} on KLEE')
+		except Exception as e:
+			print(f'Error running {testname} on KLEE: {e}')
 
 
 		#### CPAchecker ####
@@ -91,8 +91,8 @@ class DockerContainers():
 				volumes=[f'/Users/nicholas/Documents/8_2025S/CS810/project/810-final-project/results/{testname}/cpachecker:/workdir'],
 				remove=True)
 			cpachecker_time = time.time() - cpachecker_start
-		except:
-			print(f'Error running {testname} on CPAchecker')
+		except Exception as e:
+			print(f'Error running {testname} on CPAchecker: {e}')
 		
 
 		# Write times to file

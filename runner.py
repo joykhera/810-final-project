@@ -1,16 +1,15 @@
 from docker_containers import DockerContainers
-import time
 
 containers = DockerContainers()
 
-working_tests = [
+test_names= [
 	'K_binary_search_correct',
 	'K_binary_search_incorrect',
 	'K_get_sign',
 	'K_password_checker',
 	'K_password_checker_2',
 	'K_regex_recursion',
-	'K_sort'
+	'K_sort',
 ]
 
 def run_test(testname):
@@ -21,8 +20,8 @@ def run_test(testname):
 	containers.run_code(testname, f'./tests/{testname}/klee.c', f'./tests/{testname}/cpachecker.c', options)
 
 def run_all_tests():
-	for t in working_tests:
+	for t in test_names:
 		run_test(t)
 
-run_all_tests()
-# run_test('binary_search_correct')
+# run_all_tests()
+run_test('C_while_const')

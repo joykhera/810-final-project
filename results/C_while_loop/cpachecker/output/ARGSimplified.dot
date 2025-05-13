@@ -1,0 +1,12 @@
+digraph ARG {
+node [style="filled" shape="box" color="white"]
+2 [fillcolor="cornflowerblue" label="2 @ N1\nmain entry\nAbstractionState: ABS1: true\n" id="2"]
+22 [fillcolor="cornflowerblue" label="22 @ N8\nmain\nAbstractionState: ABS2: true\n" id="22"]
+54 [fillcolor="red" label="54 @ N19\nmain\nAbstractionState: ABS4: true\n AutomatonState: AssertionAutomaton: _predefinedState_ERROR\n" id="54"]
+33 [fillcolor="orange" label="33 @ N17\nmain\n" id="33"]
+25 [label="25 @ N0\nmain exit\n" id="25"]
+2 -> 22 []
+22 -> 25 []
+22 -> 33 []
+22 -> 54 []
+}

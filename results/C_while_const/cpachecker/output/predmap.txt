@@ -1,0 +1,6 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun |main::z| () (_ BitVec 32))
+
+main:
+(assert (let ((.def_52 (= |main::z| (_ bv0 32)))).def_52))
+

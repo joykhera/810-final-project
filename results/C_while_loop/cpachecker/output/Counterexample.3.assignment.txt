@@ -1,0 +1,7 @@
+__VERIFIER_nondet_uint!2@: 4294967295
+__VERIFIER_nondet_uint!3@: 2147483648
+main::n@3: 4294967295
+main::x@3: 2147483648
+main::x@4: 2147483647
+main::y@2: 2147483647
+main::y@3: 2147483648
