@@ -1,0 +1,178 @@
+{
+  "binary_search_correct": {
+    "klee": {
+      "total_nodes": 22.0,
+      "total_edges": 21.0,
+      "max_depth": 1.0,
+      "avg_depth": 0.9545454545454546,
+      "avg_branching_factor": 0.9545454545454546,
+      "avg_constraint_length": 538.8636363636364,
+      "max_constraint_length": 575.0,
+      "parse_time_sec": 0.06708424999999996
+    },
+    "cpa": {
+      "total_nodes": 1.0,
+      "total_edges": 0.0,
+      "max_depth": 0.0,
+      "avg_depth": 0.0,
+      "avg_branching_factor": 0.0,
+      "avg_constraint_length": 0.0,
+      "max_constraint_length": 0.0,
+      "parse_time_sec": 0.3072567500000001
+    }
+  },
+  "binary_search_incorrect": {
+    "klee": {
+      "total_nodes": 18.0,
+      "total_edges": 17.0,
+      "max_depth": 1.0,
+      "avg_depth": 0.9444444444444444,
+      "avg_branching_factor": 0.9444444444444444,
+      "avg_constraint_length": 533.6666666666666,
+      "max_constraint_length": 575.0,
+      "parse_time_sec": 0.06338554200000002
+    },
+    "cpa": {
+      "total_nodes": 1.0,
+      "total_edges": 0.0,
+      "max_depth": 0.0,
+      "avg_depth": 0.0,
+      "avg_branching_factor": 0.0,
+      "avg_constraint_length": 0.0,
+      "max_constraint_length": 0.0,
+      "parse_time_sec": 0.32227170799999993
+    }
+  },
+  "get_sign": {
+    "klee": {
+      "total_nodes": 4.0,
+      "total_edges": 3.0,
+      "max_depth": 1.0,
+      "avg_depth": 0.75,
+      "avg_branching_factor": 0.75,
+      "avg_constraint_length": 142.5,
+      "max_constraint_length": 198.0,
+      "parse_time_sec": 0.07645512500000007
+    },
+    "cpa": {
+      "total_nodes": 1.0,
+      "total_edges": 0.0,
+      "max_depth": 0.0,
+      "avg_depth": 0.0,
+      "avg_branching_factor": 0.0,
+      "avg_constraint_length": 0.0,
+      "max_constraint_length": 0.0,
+      "parse_time_sec": 0.2465965000000001
+    }
+  },
+  "password_checker": {
+    "klee": {
+      "total_nodes": 3.0,
+      "total_edges": 2.0,
+      "max_depth": 1.0,
+      "avg_depth": 0.6666666666666666,
+      "avg_branching_factor": 0.6666666666666666,
+      "avg_constraint_length": 126.33333333333333,
+      "max_constraint_length": 193.0,
+      "parse_time_sec": 0.060439083999999976
+    },
+    "cpa": {
+      "total_nodes": 1.0,
+      "total_edges": 0.0,
+      "max_depth": 0.0,
+      "avg_depth": 0.0,
+      "avg_branching_factor": 0.0,
+      "avg_constraint_length": 0.0,
+      "max_constraint_length": 0.0,
+      "parse_time_sec": 0.24660466599999997
+    }
+  },
+  "regex_recursion": {
+    "klee": {
+      "total_nodes": 7439.0,
+      "total_edges": 7438.0,
+      "max_depth": 1.0,
+      "avg_depth": 0.9998655733297486,
+      "avg_branching_factor": 0.9998655733297486,
+      "avg_constraint_length": 147.70264820540396,
+      "max_constraint_length": 163.0,
+      "parse_time_sec": 1.582633125
+    },
+    "cpa": {
+      "total_nodes": 1.0,
+      "total_edges": 0.0,
+      "max_depth": 0.0,
+      "avg_depth": 0.0,
+      "avg_branching_factor": 0.0,
+      "avg_constraint_length": 0.0,
+      "max_constraint_length": 0.0,
+      "parse_time_sec": 0.07593537500000025
+    }
+  },
+  "sort": {
+    "klee": {
+      "total_nodes": 2.0,
+      "total_edges": 1.0,
+      "max_depth": 1.0,
+      "avg_depth": 0.5,
+      "avg_branching_factor": 0.5,
+      "avg_constraint_length": 115.0,
+      "max_constraint_length": 230.0,
+      "parse_time_sec": 0.064490041
+    },
+    "cpa": {
+      "total_nodes": 1.0,
+      "total_edges": 0.0,
+      "max_depth": 0.0,
+      "avg_depth": 0.0,
+      "avg_branching_factor": 0.0,
+      "avg_constraint_length": 0.0,
+      "max_constraint_length": 0.0,
+      "parse_time_sec": 0.24970216600000006
+    }
+  },
+  "while_const": {
+    "klee": {
+      "total_nodes": 2.0,
+      "total_edges": 1.0,
+      "max_depth": 1.0,
+      "avg_depth": 0.5,
+      "avg_branching_factor": 0.5,
+      "avg_constraint_length": 7.0,
+      "max_constraint_length": 14.0,
+      "parse_time_sec": 0.05726658299999998
+    },
+    "cpa": {
+      "total_nodes": 1.0,
+      "total_edges": 0.0,
+      "max_depth": 0.0,
+      "avg_depth": 0.0,
+      "avg_branching_factor": 0.0,
+      "avg_constraint_length": 0.0,
+      "max_constraint_length": 0.0,
+      "parse_time_sec": 0.247548125
+    }
+  },
+  "while_var": {
+    "klee": {
+      "total_nodes": 838.0,
+      "total_edges": 837.0,
+      "max_depth": 1.0,
+      "avg_depth": 0.9988066825775657,
+      "avg_branching_factor": 0.9988066825775657,
+      "avg_constraint_length": 349.22792362768496,
+      "max_constraint_length": 381.0,
+      "parse_time_sec": 0.21228004199999995
+    },
+    "cpa": {
+      "total_nodes": 1.0,
+      "total_edges": 0.0,
+      "max_depth": 0.0,
+      "avg_depth": 0.0,
+      "avg_branching_factor": 0.0,
+      "avg_constraint_length": 0.0,
+      "max_constraint_length": 0.0,
+      "parse_time_sec": 0.11613062500000004
+    }
+  }
+}
