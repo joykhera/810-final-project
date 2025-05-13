@@ -1,0 +1,18 @@
+Time in seconds
+
+Test Case 							KLEE CPAchecker
+binary_search_correct 	21.5 		25.8
+binary_search_incorrect 17.7 		22.6
+get_sign 								11.2 		4.1
+password_checker				11.4 		4.8
+password_checker_2 			11.5 		5.0
+regex_recursion 				22.3 		4.0*
+sort 										11.8 		6.7
+while_const 						11.6 		6.6
+while_var 							600+ 		7.5
+
+NOTES:
+For simple programs, CPAchecker ran much faster compared to KLEE. For more complex tests such as binary search, 
+CPAchecker ended up performing slightly worse. There are two special cases to make note of. In the regex_recusion
+test case, the 4.0 seconds is not really accurate since it ignores all recursive calls. For the while_var test,
+KLEE was left running for 10 minutes and never finished, so total time is not known.
