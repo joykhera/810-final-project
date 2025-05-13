@@ -14,11 +14,6 @@ test_names= [
 ]
 
 def run_test(containers, testname):
-	# options = ''
-	# with open(f'./tests/{testname}/cpachecker.options', 'r') as opt: 
-	# 	options = opt.read()
-
-	# containers.run_code(testname, f'./tests/{testname}/klee.c', f'./tests/{testname}/cpachecker.c', options, f'{getcwd()}/results')
 	cur_path = getcwd()
 	containers.run_code(testname, f'{cur_path}/tests/{testname}', f'{cur_path}/results')
 

@@ -43,7 +43,6 @@ class DockerContainers():
 			os.makedirs(f'{test_dir}/klee')
 			os.makedirs(f'{test_dir}/cpachecker')
 		
-
 			# Copy code to KLEE folder
 			with open(klee_file, 'r') as klee:
 				c = klee.read()
@@ -94,8 +93,6 @@ class DockerContainers():
 				name='cpachecker810',
 				image="sosylab/cpachecker:latest", 
 				platform='linux/amd64', 
-				# command='code.c --preprocess --symbolicExecution-Cegar',
-				# command='code.c --preprocess --spec Assertion --symbolicExecution-Cegar',
 				command=f'code.c {cpachecker_options}',
 				volumes=[f'{dest_dir}/{testname}/cpachecker:/workdir'],
 				remove=True)
@@ -103,7 +100,6 @@ class DockerContainers():
 		except Exception as e:
 			print(f'Error running {testname} on CPAchecker: {e}')
 		
-
 		# Write times to file
 		with open(f'{test_dir}/timings.txt', 'w') as timings:
 			timings.write(f'KLEE: {klee_time}\nCPAchecker: {cpachecker_time}')
