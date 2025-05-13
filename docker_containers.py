@@ -17,13 +17,17 @@ class DockerContainers():
 			print(f'Error retrieving docker images: {e}')
 			raise Exception
 
-	def run_code(self, testname, klee_file, cpachecker_file, cpachecker_options):
-		# Get current directory
-		current_dir = os.getcwd()
+	def run_code(self, testname, input_dir, dest_dir):
+		klee_file = f'{input_dir}/klee.c'
+		cpachecker_file = f'{input_dir}/cpachecker.c'
+
+		cpachecker_options = ''
+		with open(f'{input_dir}/cpachecker.options', 'r') as opt: 
+			cpachecker_options = opt.read()
 
 		try:
-			# Make sure test name is a duplicate
-			test_dir = f'./results/'
+			# Make sure test name isn't a duplicate
+			test_dir = dest_dir
 
 			if os.path.exists(f'{test_dir}/{testname}'):
 				i = 1
@@ -32,7 +36,7 @@ class DockerContainers():
 			
 				testname = f'{testname}-{i}'
 
-			test_dir = f'./results/{testname}'
+			test_dir = f'{dest_dir}/{testname}'
 
 			# Create directories
 			os.makedirs(test_dir)
@@ -68,7 +72,7 @@ class DockerContainers():
 				platform='linux/amd64', 
 				detach=True, 
 				command='tail -f /dev/null', # Needed to stop the container from immediately stopping
-				volumes=[f'{current_dir}/results:/results'])
+				volumes=[f'{dest_dir}:/results'])
 
 			
 			self.klee_container.exec_run(["/bin/bash", "-c", f'cd /results/{testname}/klee && clang -I /home/klee/klee_src/include -emit-llvm -c -g -O0 -Xclang -disable-O0-optnone code.c'])
@@ -93,7 +97,7 @@ class DockerContainers():
 				# command='code.c --preprocess --symbolicExecution-Cegar',
 				# command='code.c --preprocess --spec Assertion --symbolicExecution-Cegar',
 				command=f'code.c {cpachecker_options}',
-				volumes=[f'{current_dir}/results/{testname}/cpachecker:/workdir'],
+				volumes=[f'{dest_dir}/{testname}/cpachecker:/workdir'],
 				remove=True)
 			cpachecker_time = time.time() - cpachecker_start
 		except Exception as e:

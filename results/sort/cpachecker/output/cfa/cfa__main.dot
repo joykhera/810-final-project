@@ -10,5 +10,6 @@ digraph main {
 100004 [shape="component" label="test"]
 116 -> 100004 [label="test(input, 4);" fontname="Courier New"]
 100004 -> 117 [label="" fontname="Courier New"]
+116 -> 117 [label="test(input, 4);" fontname="Courier New"]
 117 -> 105 [label="return 0;" fontname="Courier New"]
 }

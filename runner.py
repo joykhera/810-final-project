@@ -1,3 +1,4 @@
+from os import getcwd
 from docker_containers import DockerContainers
 
 test_names= [
@@ -13,20 +14,21 @@ test_names= [
 ]
 
 def run_test(containers, testname):
-	options = ''
-	with open(f'./tests/{testname}/cpachecker.options', 'r') as opt: 
-		options = opt.read()
+	# options = ''
+	# with open(f'./tests/{testname}/cpachecker.options', 'r') as opt: 
+	# 	options = opt.read()
 
-	containers.run_code(testname, f'./tests/{testname}/klee.c', f'./tests/{testname}/cpachecker.c', options)
+	# containers.run_code(testname, f'./tests/{testname}/klee.c', f'./tests/{testname}/cpachecker.c', options, f'{getcwd()}/results')
+	cur_path = getcwd()
+	containers.run_code(testname, f'{cur_path}/tests/{testname}', f'{cur_path}/results')
 
 def run_all_tests(containers):
 	for t in test_names:
 		run_test(containers, t)
 
-# run_all_tests()
 try:
 	containers = DockerContainers()
-
-	run_test(containers, 'password_checker')
+	run_test(containers, 'sort')
+	# run_all_tests()
 except:
 	pass

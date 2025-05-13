@@ -590,6 +590,7 @@ label="insertion_sort()"
 73 -> 74 [label="free(temp);"]
 74 -> 62 [label="default return"]
 70 -> 72 [label="insert_ordered(temp, i, array[i]);" style="dotted" arrowhead="empty"]
+70 -> 72 [label="insert_ordered(temp, i, array[i]);"]
 72 -> 69 [label=""]
 69 -> 68 [label="i = i + 1;"]}
 subgraph cluster_main {
@@ -1042,6 +1043,7 @@ label="main()"
 114 -> 115 [label="__CPAchecker_TMP_3 = __VERIFIER_nondet_int();"]
 115 -> 116 [label="int input[4] = { __CPAchecker_TMP_0, __CPAchecker_TMP_1, __CPAchecker_TMP_2, __CPAchecker_TMP_3 };"]
 116 -> 117 [label="test(input, 4);" style="dotted" arrowhead="empty"]
+116 -> 117 [label="test(input, 4);"]
 117 -> 105 [label="return 0;"]}
 subgraph cluster_test {
 label="test()"
@@ -1054,7 +1056,9 @@ label="test()"
 82 -> 83 [label="memcpy(temp1, array, 16UL);"]
 83 -> 84 [label="memcpy(temp2, array, 16UL);"]
 84 -> 85 [label="insertion_sort(temp1, 4);" style="dotted" arrowhead="empty"]
+84 -> 85 [label="insertion_sort(temp1, 4);"]
 85 -> 86 [label="bubble_sort(temp2, 4);" style="dotted" arrowhead="empty"]
+85 -> 86 [label="bubble_sort(temp2, 4);"]
 86 -> 87 [label="printf(\"insertion_sort: [%d, %d, %d, %d]\n\", temp1[0], temp1[1], temp1[2], temp1[3]);"]
 87 -> 88 [label="printf(\"bubble_sort   : [%d, %d, %d, %d]\n\", temp2[0], temp2[1], temp2[2], temp2[3]);"]
 88 -> 89 [label="for"]
