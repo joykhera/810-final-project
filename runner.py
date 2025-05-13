@@ -3,13 +3,15 @@ from docker_containers import DockerContainers
 containers = DockerContainers()
 
 test_names= [
-	'K_binary_search_correct',
-	'K_binary_search_incorrect',
-	'K_get_sign',
-	'K_password_checker',
-	'K_password_checker_2',
-	'K_regex_recursion',
-	'K_sort',
+	'binary_search_correct',
+	'binary_search_incorrect',
+	'get_sign',
+	'password_checker',
+	'password_checker_2',
+	'regex_recursion',
+	'sort',
+	'while_const',
+	'while_var',
 ]
 
 def run_test(testname):
