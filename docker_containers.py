@@ -6,16 +6,21 @@ class DockerContainers():
 	def __init__(self):
 		try:
 			self.docker = docker.from_env()
-		except:
+		except Exception as e:
 			print(f'Error retrieving Docker instance. Make sure Docker is running: {e}')
+			raise Exception
 
 		try:
 			self.docker.images.get('klee/klee:latest')
 			self.docker.images.get('sosylab/cpachecker:latest')
 		except Exception as e:
 			print(f'Error retrieving docker images: {e}')
+			raise Exception
 
 	def run_code(self, testname, klee_file, cpachecker_file, cpachecker_options):
+		# Get current directory
+		current_dir = os.getcwd()
+
 		try:
 			# Make sure test name is a duplicate
 			test_dir = f'./results/'
@@ -63,7 +68,7 @@ class DockerContainers():
 				platform='linux/amd64', 
 				detach=True, 
 				command='tail -f /dev/null', # Needed to stop the container from immediately stopping
-				volumes=['/Users/nicholas/Documents/8_2025S/CS810/project/810-final-project/results:/results'])
+				volumes=[f'{current_dir}/results:/results'])
 
 			
 			self.klee_container.exec_run(["/bin/bash", "-c", f'cd /results/{testname}/klee && clang -I /home/klee/klee_src/include -emit-llvm -c -g -O0 -Xclang -disable-O0-optnone code.c'])
@@ -88,7 +93,7 @@ class DockerContainers():
 				# command='code.c --preprocess --symbolicExecution-Cegar',
 				# command='code.c --preprocess --spec Assertion --symbolicExecution-Cegar',
 				command=f'code.c {cpachecker_options}',
-				volumes=[f'/Users/nicholas/Documents/8_2025S/CS810/project/810-final-project/results/{testname}/cpachecker:/workdir'],
+				volumes=[f'{current_dir}/results/{testname}/cpachecker:/workdir'],
 				remove=True)
 			cpachecker_time = time.time() - cpachecker_start
 		except Exception as e:
